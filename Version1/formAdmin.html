@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormAdmin</title>
+    <link rel="stylesheet" href="./css/formAdmin.css">
+    <link rel="stylesheet" href="../Codigo/css/all.css" />
+    <link rel="stylesheet" href="../Codigo/css/all.min.css" />
+</head>
+<body>
+    <!--Header-->
+    <div id="header">
+        <div class="logo">
+          <img src="./imag/Fam/bm-removebg-preview.png" alt="" />
+        </div>
+        <!--Buscador-->
+        <div class="buscador">
+          <a href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <input type="text" placeholder="Buscar" />
+        </div>
+         <!--Hamburguesa-->
+        <div class="menus">
+          <div class="imgMenu" id="menu">
+            <img src="./imag/Fam/burger-removebg-preview (1).png" alt="" />
+          </div>
+          <div id="nav">
+            <div><a href="./index.html">Inicio</a></div>
+            <div><a href="./productos.html #CAR">Cliente</a></div>
+            
+          </div>
+        </div>
+      </div>
+      
+    <div>
+      <form action="" id="formul">
+        <div class="login">
+            <img src="./imag/Fam/login-935679-removebg-preview.png" alt="">
+        </div>
+       
+        <div class="campos">
+            <div><i class="fa-solid fa-user"></i></div>
+            
+          <input
+          
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Nombre"
+            required
+          />
+        </div>
+        <div class="campos">
+            <div><i class="fa-solid fa-lock"></i></div>
+            
+          <input
+            type="password"
+            name="contraseña"
+            id="contraseña"
+            placeholder="Contraseña"
+            required
+          />
+        </div>
+        
+        <div class="btn" onclick="pasar()">
+          <input type="button" value="ENTRAR">
+        </div>
+      </form>
+    </div>
+
+
+
+
+
+      <script src="./JavaScript/main.js"></script>
+</body>
+</html>

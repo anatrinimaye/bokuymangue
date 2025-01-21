@@ -1,0 +1,43 @@
+
+/* CAJA DEL NAV */
+.head{
+    background-color: rgb(0, 0, 0);
+    font-size: 19px;
+    .nav-item{
+        a{
+            font-family: sans-serif;
+            color: rgb(215, 218, 11);
+        }
+    }
+    i{
+        font-size: 16px;
+        color: rgb(215, 218, 11);
+        
+    }
+    
+}
+
+/* BUSCADOR */
+.buscador{
+    width: 590px;
+    border: 1px solid rgb(214, 207, 207);
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+    
+    /* Input del buscador */
+    .inpt{
+        width: 550px;
+        border-radius: 0px 5px 5px 0px;
+        border: none;
+        background-color: none;
+        outline: none;
+        color: white;
+        background-color: rgba(0, 128, 0, 0);
+    }
+}
+/* Caja de los enlaces y el buscador */
+.cajEnlaces{
+    a:hover{
+        color: rgb(0, 26, 255);
+    }
+}

@@ -1,0 +1,255 @@
+
+
+
+/*Eslogan*/
+.inicio{
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(var(--colorRoug),var(--colorAzu));
+  margin-bottom: 30px;
+}
+.inicio h3 {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  color: white;
+  font-family: cambria;
+  font-weight: bold;
+}
+.inicio h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cambria;
+}
+.eslogan {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+ 
+}
+/*Imagen del eslogan*/
+.cestaFruta{
+  width: 400px;
+  height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+.cestaFruta img{
+    width: 100%;
+    height: 100%; 
+}
+.eslogan p {
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  margin-left: 50px;
+  font-family: cambria;
+}
+/*Quienes somos*/
+#quien{
+  width: 300px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--colorazul);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-left: 650px;
+}
+.somos{
+  width: 100%;
+  height: 350px;
+  background-color: var(--colorVerd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.texto {
+  width: 600px;
+}
+.texto p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+/*Slider*/
+#cestafrutas {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 20px;
+  
+}
+#cestafrutas ul{
+  display: flex;
+  padding: 0;
+  width: 800%;
+  
+
+}
+#cestafrutas li{
+  list-style: none;
+  width: 100%;
+}
+#cestafrutas img {
+  width: 100%;
+  background-size:100% 100% ;
+  animation: slide 15s infinite alternate ease;
+  
+}
+@keyframes slide{
+  0%{margin-left: 0%;}
+  20%{margin-left: 0%;}
+
+  25%{margin-left: -100%;}
+  30%{margin-left: -100%;}
+
+  35%{margin-left: -200%;}
+  40%{margin-left: -200%;}
+
+  45%{margin-left: -300%;}
+  50%{margin-left: -300%;}
+
+  55%{margin-left: -400%;}
+  60%{margin-left: -400%;}
+
+  65%{margin-left: -500%;}
+  70%{margin-left: -500%;}
+
+  75%{margin-left: -600%;}
+  80%{margin-left: -600%;}
+
+  85%{margin-left: -700%;}
+  90%{margin-left: -700%;}
+  100%{margin-left: -700%;}
+}
+
+/*Nosotros*/
+#nosotros {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorazul);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-left: 650px;
+}
+.main .section2 {
+  width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-left: 90px;
+  margin-bottom: 50px;
+}
+
+/*Foto Ana*/
+#uno {
+  width: 500px;
+  height: 700px;
+}
+#uno img {
+  width: 100%;
+  height: 600px;
+}
+/*Foto los cuatro*/
+#dos {
+  width: 900px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#dos img {
+  width: 250px;
+  height: 250px;
+}
+/*Foto Vero*/
+#tres {
+  width: 500px;
+  height: 700px;
+}
+#tres img {
+  width: 100%;
+  height: 600px;
+}
+.section2 article {
+  width: 100%;
+}
+.section2 article img {
+  width: 500px;
+  border-radius: 20px;
+  padding: 5px;
+}
+.section2 #tres p, #uno p, .matYros p {
+  font-size: 14px;
+  font-family: cambria;
+  color: blue;
+  font-weight: bold;
+  padding: 1px 10px;
+  margin-bottom: 40px;
+  border-left: 5px solid orangered;
+}
+
+/*Contactos*/
+.footer{
+    
+     width: 100%;
+     height: 140px;
+ }
+#cont {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorazul);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 690px;
+}
+.contactos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.contactos #cuentas {
+  width: 1400px;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: var(--colorAzu);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.contactos #cuentas div a{
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+    color: black;
+}
+/*Flecha*/
+#volver a{
+  font-size: 30px;
+  color: var(--colorRoug);
+}
+/*Importando Responsive*/
+/*@import url("./responInicio.css");*/

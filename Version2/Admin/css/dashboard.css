@@ -1,0 +1,37 @@
+
+.dash{
+   
+    .cajas{
+        justify-content: space-evenly;
+        align-content: center;
+        
+        .caja{
+            width: 200px;
+            height: 100px;
+            background-color: #095c73e2;
+            text-align: center;
+            border-radius: 5%;
+            box-shadow: 0dvw;
+            
+            .dasNum{
+                color: white;
+                font-weight: bolder;
+            }
+            p{
+                color: black;
+                font-weight: bold;
+                font-size: 18px;
+                font-family: cambria;
+            }
+            i{
+                color: black;
+                font-weight: bold;
+               font-size: 18px;
+                
+            }
+            
+            
+        }
+    }
+}
+

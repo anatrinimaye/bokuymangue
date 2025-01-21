@@ -1,0 +1,151 @@
+
+  [
+    {   
+
+        "id":"aguacate",
+        "foto": "../Codigo/imag/dwec/aguacate.jpg",
+        "nombre":"AGUACATE",
+        "precio":"500"
+    },
+    {   
+
+    "id":"banana",
+    "foto": "../Codigo/imag/dwec/banana.webp",
+    "nombre":"BANANA",
+    "precio":"400"
+    },
+    {   
+
+    "id":"berengena",
+    "foto": "../Codigo/imag/dwec/berengena.jpg",
+    "nombre":"BERENGENA",
+    "precio":"500"
+    },
+    {   
+
+    "id":"cebolla",
+    "foto": "../Codigo/imag/dwec/cebolla.webp",
+    "nombre":"CEBOLLA",
+    "precio":"200"
+    },
+    {   
+
+    "id":"cereza",
+    "foto": "../Codigo/imag/dwec/cereza.jpg",
+    "nombre":"CEREZA",
+    "precio":"200"
+    },
+    {   
+
+    "id":"coco",
+    "foto": "../Codigo/imag/dwec/coco.jpg",
+    "nombre":"COCO",
+    "precio":"200"
+    },
+    {   
+
+    "id":"fresa",
+    "foto": "../Codigo/imag/dwec/fresa.jpg",
+    "nombre":"FRESA",
+    "precio":"200"
+    },
+    {   
+
+    "id":"guayaba",
+    "foto": "../Codigo/imag/dwec/guayaba.jpg",
+    "nombre":"GUAYABA",
+    "precio":"200"
+    },
+    {   
+
+    "id":"kiwi",
+    "foto": "../Codigo/imag/dwec/kiwi.jpg",
+    "nombre":"KIWI",
+    "precio":"250"
+    },
+    {   
+
+    "id":"limon",
+    "foto": "../Codigo/imag/dwec/limon.jpg",
+    "nombre":"LIMON",
+    "precio":"200"
+    },
+    {   
+
+    "id":"mandarina",
+    "foto": "../Codigo/imag/dwec/mandarina2.jpg",
+    "nombre":"MANDARINA",
+    "precio":"200"
+    },
+    {   
+
+    "id":"manzana",
+    "foto": "../Codigo/imag/dwec/manzana.webp",
+    "nombre":"MANZANA",
+    "precio":"300"
+    },
+    {   
+
+    "id":"mango",
+    "foto": "../Codigo/imag/dwec/mango.webp",
+    "nombre":"MANGO",
+    "precio":"300"
+    },
+    {   
+
+    "id":"melon",
+    "foto": "../Codigo/imag/dwec/melon.webp",
+    "nombre":"MELON",
+    "precio":"700"
+    },
+    {   
+
+    "id":"melocoton",
+    "foto": "../Codigo/imag/dwec/melocoton.webp",
+    "nombre":"MELOCOTON",
+    "precio":"800"
+    },
+    {   
+
+    "id":"naranja",
+    "foto": "../Codigo/imag/dwec/naranja.jpg",
+    "nombre":"NARANJA",
+    "precio":"300"
+    },
+    {   
+
+    "id":"papaya",
+    "foto": "../Codigo/imag/dwec/papaya.webp",
+    "nombre":"PAPAYA",
+    "precio":"500"
+    },
+    {   
+
+    "id":"perra",
+    "foto": "../Codigo/imag/dwec/perra.jpg",
+    "nombre":"PERRA",
+    "precio":"400"
+    },
+    {   
+
+    "id":"piña",
+    "foto": "../Codigo/imag/dwec/pina.jpg",
+    "nombre":"PIÑA",
+    "precio":"500"
+    },
+    {   
+
+    "id":"sandia",
+    "foto": "../Codigo/imag/dwec/sandia.jpg",
+    "nombre":"SANDIA",
+    "precio":"500"
+    },
+    {   
+
+    "id":"tomate",
+    "foto": "../Codigo/imag/dwec/tomate.webp",
+    "nombre":"TOMATE",
+    "precio":"300"
+    }
+    
+]

@@ -1,0 +1,95 @@
+:root{
+    --colorRoug: rgba(209, 27, 27, 0.937);
+    --colorBlanc:rgb(253, 253, 253);
+    --colorAmar:rgb(247, 255, 8);
+    --colorAzu:rgba(43, 9, 163, 0.774);
+    --colorazul:rgb(0, 204, 255);
+    --colorVerd: rgba(9, 255, 0, 0.438);
+  }
+  *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+/*Header*/
+#header {
+    display: flex;
+    align-items: center;
+    gap: 250px;
+    background-color: black;
+    height: 90px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+  .logo img {
+    width: 170px;
+    height: 100px;
+    padding-left: 40px;
+  }
+  /*Buscador*/
+  .buscador {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    background-color: var(--colorBlanc);
+    border-radius: 5px;
+  }
+  .buscador i {
+    font-size: 15px;
+    width: 30px;
+    margin: 5px 0px 5px 5px;
+  }
+  .buscador input {
+    outline: none;
+    border: none;
+    width: 90px;
+    height: 25px;
+    border-radius: 0px 5px 5px 0px;
+  }
+  /*anclas del navbar*/
+  #nav{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+  }
+  .menus #nav a {
+    display: flex;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-right: 20px;
+    color: var(--colorAmar);
+    font-size: 23px;
+    font-family: cambria;
+  }
+  .menus #nav a:hover{
+   border-top: 3px solid var(--colorazul);
+   border-bottom: 3px solid var(--colorazul);
+   color: white;
+   border-radius: 7px;
+  }
+  #nav .ulu{
+    background-color: black;
+    font-family: cambria;
+  }
+  #nav .ulu a:hover{
+    color: black;
+    background-color: rgb(25, 156, 27);
+    border: none;
+  }
+  
+  /*Hamburguesa*/
+  .imgMenu{
+    display: none;
+  }
+ 
+  .logo img {
+    width: 130px;
+    height: 100px;
+    padding-left: 10px;
+  }
+  .log img{
+    width: 200px; 
+    height: 150px;
+    margin: 15px 15px 15px 800px;
+  }

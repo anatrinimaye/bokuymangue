@@ -1,0 +1,57 @@
+
+
+@import url(./css.css);
+
+/*Eslogan*/
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.604)),url(../img/fondwec3.png);
+    background-position: center;
+    background-size: cover cover;
+    /* background-repeat: no-repeat; */
+    height: auto;
+    
+    /* Titulo */
+    .eslo{
+      font-size: 20px;
+      font-family: cambria;
+      color: rgb(255, 255, 255);
+      
+      h3{
+        font-size: 20px;
+        font-weight: bold;
+  
+      }
+      h1{
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(255, 225, 0);
+       
+      }
+
+    }
+    
+    /*Eslogan*/
+    .eslogan{
+      justify-content:center;
+      align-items: center;
+      flex-wrap: wrap;
+      p{
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-family: cambria;
+        font-weight: bold;
+      }
+    }
+
+    /* Titulo Despues del banner */
+    .titulo{
+      font-family: cambria;
+      font-weight: bold;
+      /* margin-top: 150px; */
+      /* text-shadow: 1px 1px #302f4e; */
+      
+    }
+    
+  }
+  
+ 
