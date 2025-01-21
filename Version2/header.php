@@ -13,7 +13,9 @@
     <!-- HEADER -->
     <nav class="navbar navbar-expand-lg head">
         <div class="container-fluid">
-            <img class="rounded-pill ms-5" style="width:60px" src="./img/logo.png" alt="">
+            <label class=" nomEmp"> BOKUY MANGUE</label>
+          
+            <!-- <img class="rounded-pill ms-5" style="width:60px" src="./img/logo.png" alt=""> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon bg-light"></span>
             </button>

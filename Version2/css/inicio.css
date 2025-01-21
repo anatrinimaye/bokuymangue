@@ -8,7 +8,7 @@
     background-position: center;
     background-size: cover cover;
     /* background-repeat: no-repeat; */
-    height: auto;
+    height: 500px;
     
     /* Titulo */
     .eslo{
@@ -42,16 +42,22 @@
         font-weight: bold;
       }
     }
-
-    /* Titulo Despues del banner */
-    .titulo{
-      font-family: cambria;
-      font-weight: bold;
-      /* margin-top: 150px; */
-      /* text-shadow: 1px 1px #302f4e; */
-      
-    }
-    
   }
+    /* SOBRE NOSOTROS */
+    .sobreNos{
+      justify-content: space-around;
+      align-items: center;
+      .texto{
+        text-align: justify;
+      }
+      a{
+        text-decoration: none;
+        height: 35px;
+        color: white;
+        background-color: rgb(17, 4, 132);
+      }
+    }
+
+   
   
  

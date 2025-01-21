@@ -2,7 +2,13 @@
 /* CAJA DEL NAV */
 .head{
     background-color: rgb(0, 0, 0);
-    font-size: 19px;
+    font-size: 17px;
+    position: fixed;
+    top: 0;
+    .nomEmp{
+        font-family: cambria;
+        color: white;
+    }
     .nav-item{
         a{
             font-family: sans-serif;
