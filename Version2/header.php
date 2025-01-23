@@ -13,7 +13,7 @@
     <!-- HEADER -->
     <nav class="navbar navbar-expand-lg head">
         <div class="container-fluid">
-            <label class=" nomEmp"> BOKUY MANGUE</label>
+            <label class="nomEmp"> BOKUY MANGUE</label>
           
             <!-- <img class="rounded-pill ms-5" style="width:60px" src="./img/logo.png" alt=""> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 alig-item-center">
                     <!-- Inicio -->
                     <li class="nav-item px-5">
-                        <a class="nav-link" aria-current="page" href="">
+                        <a class="nav-link" aria-current="page" href="../Version2/index.php">
                             <i class="fa-solid fa-house"></i>
                             Inicio
                         </a>
@@ -44,7 +44,7 @@
                     </li>
                     <!-- Productos -->
                     <li class="nav-item px-5">
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="../Version2/productos.php">
                             <i class="fa-solid fa-apple-whole"></i> 
                             Productos
                         </a>

@@ -21,11 +21,11 @@ require "./header.php";
     </div>
 
     <!-- SOBRE NOSOTROS -->
-    <div class="container w-100 d-flex mt-5 sobreNos">
+    <div class="container py-5 d-flex sobreNos">
         <!-- TITULO -->
          <div class="container texto">
-            <p class="h1 ps-4 pt-3">Sobre Nosotros</p>
-            <p class="pt-5 px-3 mb-5">
+            <p class="h1 ps-4 pt-1">Sobre Nosotros</p>
+            <p class="pt-4 px-3 mb-5">
                 La Agropecuaria BOKUY MANGUE es una empresa familiar formada por los
                 hermanos Bokuy Mangue cuyo objetivo es la distribución de bienes y
                 servicios de productos agrícolas en todo el ámbito nacional. Con
@@ -37,11 +37,120 @@ require "./header.php";
               
               <a class="mt-5 p-1 ms-2" href="">Leer Mas <i class="fa-solid fa-arrow-right"></i></a>
          </div>
-        <div class="container bg-secondary">
+        <div class="container foto">
           <img class="w-100" src="./img/logo.png" alt="">
         </div>
     </div>
 
+    <!--CAJA DE LAS CATEGORIAS DE LOS PRODUCTOS -->
+    <p class="h1 ms-5 py-2 mb-3">Categorias de Productos</p>
+
+  <div class="container ">
+    <div class="row categorias">
+      <div class="col-md-4 categor">
+          <img class="w-100" src="./img/dos.png" alt="">
+          <div class="container categoria d-flex">
+            <div>
+                <p class="text-center pt-3">CITRICOS</p>
+            </div>
+            <div>
+              <a class="btn btn-primary mt-5 p-1 ms-2" href="">Ver Productos</i></a>
+            </div>
+          </div>
+      </div>
+      
+      <div class="col-md-4">
+          <img class="w-100" src="./img/dos.png" alt="">
+          <div class="container categoria d-flex">
+              <div>
+                <p class="text-center pt-3">CITRICOS</p>
+              </div>
+              <div>
+              <a class="btn btn-primary mt-5 p-1 ms-2" href="">Ver Productos</i></a>
+            </div>
+      </div>
+      
+      <div class="col-md-4">
+          <img class="w-100" src="./img/dos.png" alt="">
+          <div class="container categoria d-flex">
+              <div>
+                <p class="text-center pt-3">CITRICOS</p>
+              </div>
+              <div>
+              <a class="btn btn-primary mt-5 p-1 ms-2" href="">Ver Productos</i></a>
+            </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- <div class="container categorias mb-5">
+
+      <p class="h1 ms-5 py-2 mb-3">Categorias de Productos</p>
+
+      <div class="container categoria d-flex">
+        <div class="mb-3 w-25 bg-light categor">
+          <img class="w-100" src="./img/dos.png" alt="">
+          <div class="container producto d-flex">
+              <div>
+                <p class="text-center pt-3">CITRICOS</p>
+              </div>
+              <div>
+              <a class="btn btn-primary mt-5 p-1 ms-2" href="">Ver Productos</i></a>
+            </div>
+          </div>
+
+          <p class="text-center"></p>
+        </div>
+
+        <div class=" mb-3 w-25 bg-light categor">
+          <img class="w-100" src="./img/dos.png" alt="">
+          <div class="container pt-2 producto d-flex">
+            <div>
+            <p class="text-center py-3">CITRICOS</p>
+            </div>
+            <div>
+              <a class="btn btn-primary mt-5 p-1 ms-2" href="">Ver Productos</i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class=" mb-3 w-25 bg-light categor">
+          <img class="w-100" src="./img/dos.png" alt="">
+          <div class="container pt-2 producto d-flex">
+            <div>
+            <p class="text-center py-3">CITRICOS</p>
+            </div>
+            <div>
+              <a class="btn btn-primary mt-5 p-1 ms-2" href="">Ver Productos</i></a>
+            </div>
+          </div>
+        </div>
+
+       
+        
+      </div>
+    </div> -->
+
+    <!-- NOTICIAS -->
+    <div class="container">
+      <p class="h1 text-center">NEWS</p>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+     </div>
+    
+    
+    <!-- FOOTER -->
+    <?php
+    require "./footer.php";
+    ?>
+
+   
   
 
 
