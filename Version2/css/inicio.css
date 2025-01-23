@@ -47,7 +47,7 @@
     .sobreNos{
       justify-content: space-around;
       align-items: center;
-      margin-top: 200px;
+      margin-top: 132px;
       .texto{
         width: 600px;
         text-align: justify;
@@ -64,8 +64,8 @@
         
       }
       .foto{
-       width: 500px;
-       height: 550px;
+       width: 450px;
+       height: 500px;
        background-color: #560303af;
        box-shadow: 2px 2px 2px rgb(0, 0, 0);
        
@@ -74,15 +74,11 @@
 
     /*CAJA GENERAL DE LOS PRODUCTOS */
     .categorias{
-      .categoria{
-        justify-content: space-around;
-        
-        a{
-          color: black;
-        }
-        .categor{
-          box-shadow: 2px 2px 2px black;
-        }
+      justify-content: space-around;
+      flex-wrap: wrap;
+      .card{
+        border: none;
+        box-shadow: 1px 2px 2px rgb(0, 0, 0);
       }
 
     }

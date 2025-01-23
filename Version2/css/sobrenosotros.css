@@ -1,0 +1,29 @@
+
+/*SOBRE NOSOTROS */
+.sobreNos{
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 200px;
+    .texto{
+      width: 600px;
+      text-align: justify;
+    }
+    a{
+      font-family: cambria;
+      text-decoration: none;
+      height: 35px;
+      color: white;
+      background-color: rgb(17, 4, 132);
+    }
+    a:hover{
+      background-color: rgb(10, 10, 10);
+      
+    }
+    .foto{
+     width: 500px;
+     height: 550px;
+     background-color: #560303af;
+     box-shadow: 2px 2px 2px rgb(0, 0, 0);
+     
+    }
+  }

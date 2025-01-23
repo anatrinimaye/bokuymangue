@@ -12,7 +12,7 @@
 <body>
     <!-- HEADER -->
     <nav class="navbar navbar-expand-lg head">
-        <div class="container-fluid">
+        <div class="container-fluid px-5 py-3">
             <label class="nomEmp"> BOKUY MANGUE</label>
           
             <!-- <img class="rounded-pill ms-5" style="width:60px" src="./img/logo.png" alt=""> -->
@@ -37,7 +37,7 @@
                     </li>
                     <!-- Sobre Nosotros -->
                     <li class="nav-item px-5">
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="../Version2/sobrenosotros.php">
                             <i class="fa-solid fa-users"></i> 
                             Sobre Nosotros
                         </a>
