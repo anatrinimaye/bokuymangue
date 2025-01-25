@@ -1,44 +1,32 @@
+
 .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
-    width: 100%;
-    height: 140px;
+    /* Container que contiene las tres cajas */
+    .copYenlaces{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* Caja del copyrigth */
+        
+        /* Caja de los contactos iconos de las redes sociales */
+        .enlaces{
+            display: flex;
+            justify-content: space-around;
+            i{
+                color: black;
+                border-radius: 5px;
+                background: #93262657;
+            }
+            i:hover{
+                background: #93262694;
+            }
+        }
+
+    }
 }
-#cont {
- width: 200px;
- height: 40px;
- display: flex;
- justify-content: center;
- align-items: center;
- background-color: var(--colorazul);
- border-radius: 10px;
- margin-bottom: 20px;
- margin-left: 690px;
-}
-.contactos{
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 15px;
-}
-.contactos #cuentas {
- width: 1400px;
- height: 50px;
- margin-left: 10px;
- margin-right: 10px;
- background-color: var(--colorAzu);
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 70px;
-}
-.contactos #cuentas div a{
-   display: flex;
-   gap: 5px;
-   text-decoration: none;
-   color: black;
-}
-/*Flecha*/
-#volver a{
- font-size: 30px;
- color: var(--colorRoug);
-}
+
+

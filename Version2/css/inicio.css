@@ -72,18 +72,34 @@
       }
     }
 
-    /*CAJA GENERAL DE LOS PRODUCTOS */
+    /*CAJA GENERAL DE LAS CATEGORIA DE LOS PRODUCTOS */
     .categorias{
       justify-content: space-around;
       flex-wrap: wrap;
+      /* Caja de cada categoria */
       .card{
         border: none;
         box-shadow: 1px 2px 2px rgb(0, 0, 0);
       }
 
     }
-
-
+    /* CAJA DE LAS NOTICIAS */
+    .noticias{
+  
+      .noticia{
+        cursor: pointer;
+        div{
+         
+         p{
+          color: rgb(2, 89, 10);
+          background-color: rgba(0, 0, 0, 0.221);
+         }
+          img{
+            height: 500px;
+          }
+        }
+      }
+    }
    
   
  

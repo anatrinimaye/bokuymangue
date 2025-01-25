@@ -29,31 +29,27 @@
                 </div>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 alig-item-center">
                     <!-- Inicio -->
-                    <li class="nav-item px-5">
+                    <li class="nav-item ps-5">
                         <a class="nav-link" aria-current="page" href="../Version2/index.php">
-                            <i class="fa-solid fa-house"></i>
-                            Inicio
+                           Inicio
                         </a>
                     </li>
                     <!-- Sobre Nosotros -->
-                    <li class="nav-item px-5">
+                    <li class="nav-item px-4">
                         <a class="nav-link" href="../Version2/sobrenosotros.php">
-                            <i class="fa-solid fa-users"></i> 
                             Sobre Nosotros
                         </a>
                     </li>
                     <!-- Productos -->
-                    <li class="nav-item px-5">
+                    <li class="nav-item px-4">
                         <a class="nav-link" href="../Version2/productos.php">
-                            <i class="fa-solid fa-apple-whole"></i> 
-                            Productos
+                           Productos
                         </a>
                     </li>
                     <!-- Bog -->
-                    <li class="nav-item px-5">
-                        <a class="nav-link" href="">
-                            <i class="fa-solid fa-newspaper"></i>
-                            Blog
+                    <li class="nav-item px-4">
+                        <a class="nav-link" href="./noticias.php">
+                           Noticias
                         </a>
                     </li>
 

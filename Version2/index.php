@@ -22,30 +22,29 @@ require "./header.php";
 
     <!-- SOBRE NOSOTROS -->
      <div class="container-fluit">
-    <div class="container py-5 d-flex sobreNos">
-        <!-- TITULO -->
-         <div class="container texto">
-            <p class="h1 ps-4 pt-1">Sobre Nosotros</p>
-            <p class="pt-4 px-3 mb-5">
-                La Agropecuaria BOKUY MANGUE es una empresa familiar formada por los
-                hermanos Bokuy Mangue cuyo objetivo es la distribución de bienes y
-                servicios de productos agrícolas en todo el ámbito nacional. Con
-                esta plataforma le ofrecemos la oportunidad de poder contemplar
-                nuestros productos de alta calidad también le damos la posibilidad
-                de poder hacer sus pedidos garantizándole seguridad y eficiencia en
-                sus pedidos.
-              </p>
-              <a class="mt-5 p-1 ms-2" href="">Leer Mas <i class="fa-solid fa-arrow-right"></i></a>
-         </div>
-        <div class="container foto">
-          <img class="w-100" src="./img/logo.png" alt="">
-        </div>
-    </div>
+      <div class="container py-5 d-flex sobreNos">
+          <!-- TITULO -->
+          <div class="container texto">
+              <p class="h1 ps-4 pt-1">Sobre Nosotros</p>
+              <p class="pt-4 px-3 mb-5">
+                  La Agropecuaria BOKUY MANGUE es una empresa familiar formada por los
+                  hermanos Bokuy Mangue cuyo objetivo es la distribución de bienes y
+                  servicios de productos agrícolas en todo el ámbito nacional. Con
+                  esta plataforma le ofrecemos la oportunidad de poder contemplar
+                  nuestros productos de alta calidad también le damos la posibilidad
+                  de poder hacer sus pedidos garantizándole seguridad y eficiencia en
+                  sus pedidos.
+                </p>
+                <a class="mt-5 p-1 ms-2" href="">Leer Mas <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="container foto">
+            <img class="w-100" src="./img/logo.png" alt="">
+          </div>
+      </div>
     </div>
 
     <!--CAJA DE LAS CATEGORIAS DE LOS PRODUCTOS -->
     <p class="container h1 my-5 ">Categorias de Productos</p>
-
     <div class="container-fluid categorias d-flex px-5 py-2">
 
       <div class="card" style="width: 18rem;">
@@ -94,26 +93,53 @@ require "./header.php";
 
     </div>
 
-
-
-   
-
     <!-- NOTICIAS -->
-    <div class="container">
-      <p class="container h1 ps-5 my-5">NOTICIAS</p>
-        <div>
+    <p class="container h1 ps-5 my-5">Noticias</p>
+    <a href="./noticias.php">
+    <div class="container  noticias">
 
-        </div>
-        <div>
-
-        </div>
-     </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+   <div class="carousel-inner noticia">
+    <div class="carousel-item active">
+    <p class="h5 text-center">Nuevo contrato con la empresa EGTC</p>
+      <img src="./img/fond1.jpg" class="d-block w-100" alt="...">
+     
+      
+    </div>
+    <div class="carousel-item">
+    <p class="h5 text-center">Nuevo contrato con la empresa EGTC</p>
+      <img src="./img/fond2.jpg" class="d-block w-100" alt="...">
+      
+      
+    </div>
+    <div class="carousel-item">
+      <p class="h5 text-center">Nuevo contrato con la empresa EGTC</p>
+      <img src="./img/fond3.jpg" class="d-block w-100" alt="...">
+      
+      
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</a>
+        
     
     
     <!-- FOOTER -->
-    <?php
-    require "./footer.php";
-    ?>
+    <p class="ms-5 h1 my-5 text-center ">Contactos</p>
+    <div class="container-fluid ">
+      <?php
+      require "./footer.php";
+      ?>
+    </div>
+   
 
    
   

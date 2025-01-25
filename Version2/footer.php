@@ -1,51 +1,76 @@
  
  
+ <link rel="stylesheet" href="./css/css.css">
  <link rel="stylesheet" href="./css/footer.css">
  
  
  <!-- FOOTER -->
 
- <div class="footer">
-      <div id="cont">
-        <div><h2>CONTACTOS</h2></div>
-      </div>
-      <div class="contactos">
-        <div id="cuentas">
-          <div>
-            <a href="">
-              <i class="fa-regular fa-envelope-open"></i>
-              <p>bokuymangue@gmail.com</p> 
-            </a>
-          </div>
-          <div>
-            <a href="https://wa.me/240222319976">
-              <i class="fa-brands fa-whatsapp"></i>
-              <p>+240222319976</p>
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <i class="fa-brands fa-square-instagram"></i>
-              <p>bokuymangue</p>
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <i class="fa-brands fa-tiktok"></i>
-              <p>@bokuymangue</p>
-            </a>
-          </div>
-          <div>
-            <a href="">
-              <i class="fa-brands fa-facebook"></i>
-              <p>@bokuymangue</p>
-            </a>
-          </div>
-        </div>
-        <div id="volver">
-          <a href="">
-            <i class="fa-solid fa-circle-up" id="flecha"></i>
-          </a>
-        </div>  
+<div class="container-fluid py-3 footer">
+  <div class="container copYenlaces">
+    <!-- Copyright -->
+    <div class="container text-center w-25 copy">
+      <div class="pt-2">
+        <p><i class="fa-regular fa-copyright"></i> copyright</p>
       </div>
     </div>
+
+    <!-- Iconos de los contactos -->
+    
+      <div class="w-50 enlaces ">
+        <!-- Icono whatsApp -->
+        <div class="">
+          <a href=""> 
+            <i class="fa-brands fa-whatsapp p-2"></i>
+          </a>
+        </div>
+        <!-- Icono Insta -->
+        <div class="">
+          <a href="">
+          <i class="fa-brands fa-instagram p-2"></i>
+          </a>  
+        </div>
+         <!-- Icono tiktok -->
+        <div class="">
+          <a href="">
+            <i class="fa-brands fa-tiktok p-2"></i>
+          </a>
+        </div>
+         <!-- Icono linked -->
+        <div class="">
+          <a href="">
+            <i class="fa-brands fa-linkedin-in p-2"></i>
+          </a>
+        </div>
+        <!-- Icono correo -->
+        <div class="">
+          <a href="">
+            <i class="fa-solid fa-envelope p-2"></i>
+          </a>
+        </div>
+        <!-- Icono facebook -->
+        <div class="">
+          <a href="">
+            <i class="fa-brands fa-facebook p-2"></i>
+          </a>
+        </div>
+
+      </div>
+ 
+
+    
+
+  </div>
+ <!-- Flecha para volver al inicio -->
+ <div class="container w-25 text-end flecha">
+      <a href="" class="btn btn-success mt-2">
+      <i class="fa-solid fa-angle-up py-2"></i>
+      </a>
+
+     </div>
+</div>
+
+
+
+
+ 
