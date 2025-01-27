@@ -1,29 +1,62 @@
 
 /*SOBRE NOSOTROS */
+/* BANNER */
+.banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.604)),url(../img/fond1.jpg);
+  background-position: center;
+  background-size: cover cover;
+  /* background-repeat: no-repeat; */
+  height: 150px;
+  p{
+    text-align: center;
+  }
+}
+
+/*SOBRE NOSOTROS */
 .sobreNos{
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 200px;
-    .texto{
-      width: 600px;
-      text-align: justify;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* margin-top: 100px; */
+  
+  /* Caja de nuestra vision */
+  .texto{
+    width: 600px;
+    text-align: justify;
+  }
+  .foto{
+   width: 350px;
+   height: 400px;
+   img{
+    width: 100%;
+    height: 100%;
+   }
+   
+  }
+}
+/* QUIENES SOMOS */
+.Qsomos{
+  
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: auto;
+  /* Caja particular */
+  .somos{
+    width: 300px;
+    height: auto;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    
+    img{
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
     }
-    a{
+    p{
       font-family: cambria;
-      text-decoration: none;
-      height: 35px;
-      color: white;
-      background-color: rgb(17, 4, 132);
-    }
-    a:hover{
-      background-color: rgb(10, 10, 10);
-      
-    }
-    .foto{
-     width: 500px;
-     height: 550px;
-     background-color: #560303af;
-     box-shadow: 2px 2px 2px rgb(0, 0, 0);
-     
+      color: rgb(0, 0, 0);
     }
   }
+}
+

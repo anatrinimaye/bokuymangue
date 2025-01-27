@@ -61,13 +61,7 @@
     
 
   </div>
- <!-- Flecha para volver al inicio -->
- <div class="container w-25 text-end flecha">
-      <a href="" class="btn btn-success mt-2">
-      <i class="fa-solid fa-angle-up py-2"></i>
-      </a>
-
-     </div>
+ 
 </div>
 
 

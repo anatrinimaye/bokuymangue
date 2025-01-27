@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plantilla Header</title>
+    <title></title>
     <link rel="stylesheet" href="./css/css.css">
     <link rel="stylesheet" href="./css/heade.css">
     
 </head>
 <body>
     <!-- HEADER -->
-    <nav class="navbar navbar-expand-lg head">
+    <nav class="navbar navbar-expand-lg head " id="header">
         <div class="container-fluid px-5 py-3">
             <label class="nomEmp"> BOKUY MANGUE</label>
           
@@ -52,21 +52,7 @@
                            Noticias
                         </a>
                     </li>
-
-                <!-- <li class="nav-item dropdown px-5">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-gear"></i> Sistem
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="./Admin/php/dashboard.php">
-                            <label><i class="fa-solid fa-user-tie"></i> Admin</label></a></li>
-                        <li><a class="dropdown-item" href="#">
-                            <label> <i class="fa-solid fa-money-bill"></i> Vendedores</label> </a></li>
-                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-credit-card"></i> Comprador</a></li>
-                    </ul>
-                </li> -->
-                </ul>
-                
+                </ul>  
             </div>   
         </div>
     </nav>

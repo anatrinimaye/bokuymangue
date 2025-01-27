@@ -21,12 +21,12 @@ require "./header.php";
     </div>
 
     <!-- SOBRE NOSOTROS -->
-     <div class="container-fluit">
-      <div class="container py-5 d-flex sobreNos">
-          <!-- TITULO -->
+     
+      <div class="container w-75 py-5 d-flex sobreNos">
+          <!--CAJA DEL TEXTO -->
           <div class="container texto">
               <p class="h1 ps-4 pt-1">Sobre Nosotros</p>
-              <p class="pt-4 px-3 mb-5">
+              <p class="pt-3 px-3 mb-5">
                   La Agropecuaria BOKUY MANGUE es una empresa familiar formada por los
                   hermanos Bokuy Mangue cuyo objetivo es la distribución de bienes y
                   servicios de productos agrícolas en todo el ámbito nacional. Con
@@ -35,13 +35,14 @@ require "./header.php";
                   de poder hacer sus pedidos garantizándole seguridad y eficiencia en
                   sus pedidos.
                 </p>
-                <a class="mt-5 p-1 ms-2" href="">Leer Mas <i class="fa-solid fa-arrow-right"></i></a>
+                <a class="mt-2 p-1 ms-2" href="./sobrenosotros.php">Leer Mas <i class="fa-solid fa-arrow-right"></i></a>
           </div>
-          <div class="container foto">
-            <img class="w-100" src="./img/logo.png" alt="">
+           <!--CAJA DE LA IMAGEN -->
+          <div class=" foto">
+            <img class="w-100" src="./img/BMblanco.jpg" alt="">
           </div>
       </div>
-    </div>
+    
 
     <!--CAJA DE LAS CATEGORIAS DE LOS PRODUCTOS -->
     <p class="container h1 my-5 ">Categorias de Productos</p>
@@ -96,48 +97,55 @@ require "./header.php";
     <!-- NOTICIAS -->
     <p class="container h1 ps-5 my-5">Noticias</p>
     <a href="./noticias.php">
-    <div class="container  noticias">
+      <div class="container  noticias">
 
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-   <div class="carousel-inner noticia">
-    <div class="carousel-item active">
-    <p class="h5 text-center">Nuevo contrato con la empresa EGTC</p>
-      <img src="./img/fond1.jpg" class="d-block w-100" alt="...">
-     
-      
-    </div>
-    <div class="carousel-item">
-    <p class="h5 text-center">Nuevo contrato con la empresa EGTC</p>
-      <img src="./img/fond2.jpg" class="d-block w-100" alt="...">
-      
-      
-    </div>
-    <div class="carousel-item">
-      <p class="h5 text-center">Nuevo contrato con la empresa EGTC</p>
-      <img src="./img/fond3.jpg" class="d-block w-100" alt="...">
-      
-      
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</a>
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner noticia">
+                <div class="carousel-item active">
+                <p class="h5 text-center">Nuevo contrato con la empresa EGTC</p>
+                  <img src="./img/fond1.jpg" class="d-block w-100" alt="...">
+                
+                  
+                </div>
+                <div class="carousel-item">
+                <p class="h5 text-center">Nuevo contrato con la empresa EGTC</p>
+                  <img src="./img/fond2.jpg" class="d-block w-100" alt="...">
+                  
+                  
+                </div>
+                <div class="carousel-item">
+                  <p class="h5 text-center">Nuevo contrato con la empresa EGTC</p>
+                  <img src="./img/fond3.jpg" class="d-block w-100" alt="...">
+                  
+                  
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+      </div>
+    </a>
         
     
     
     <!-- FOOTER -->
     <p class="ms-5 h1 my-5 text-center ">Contactos</p>
-    <div class="container-fluid ">
+    <div class="container-fluid d-flex">
       <?php
       require "./footer.php";
       ?>
+      <!-- Flecha para volver al inicio -->
+      <div class="container w-25 text-end flecha">
+        <a href="../Version2/index.php #header" class="btn btn-success mt-2">
+        <i class="fa-solid fa-angle-up py-2"></i>
+        </a>
+      </div>
     </div>
    
 
