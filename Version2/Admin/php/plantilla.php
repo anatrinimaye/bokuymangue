@@ -59,7 +59,7 @@
                         <i class="fa-solid fa-house"></i> Inicio</a>
                     </li>
                     <li class="nav-item mt-5">
-                        <a class="nav-link" href="../../header.php">
+                        <a class="nav-link" href="../../index.php">
                         <i class="fa-solid fa-angles-left"></i>LOGOUT</a>
                     </li>
                     

@@ -105,9 +105,17 @@ require "../Version2/header.php";
 
 
  <!-- FOOTER -->
- <p class="ms-5 h1 my-5 text-center ">Contactos</p>
-    <div class="container-fluid ">
-      <?php
-      require "./footer.php";
-      ?>
-    </div> 
+ <p class="ms-5 h1 my-5 text-center mt-5">Contactos</p>
+    <div class="container-fluid d-flex">
+
+    <?php
+      require "../Version2/footer.php";
+    ?>
+      
+      <!-- Flecha para volver al inicio -->
+       <div class="container w-25 text-end flecha">
+        <a href="../Version2/sobrenosotros.php #header" class="btn btn-success mt-2">
+        <i class="fa-solid fa-angle-up py-2"></i>
+        </a>
+      </div>
+    </div>

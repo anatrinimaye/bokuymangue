@@ -1,0 +1,33 @@
+
+/* BANNER */
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.604)),url(../img/fond1.jpg);
+    background-position: center;
+    background-size: cover cover;
+    /* background-repeat: no-repeat; */
+    height: 150px;
+    p{
+      text-align: center;
+    }
+  }
+  /* CAJA DE PRODUCTOS */
+  .productos{
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    /* Caja de cada producto */
+    .producto{
+      box-shadow: 1px 1px 2px black;
+      border: none;
+        .acciones{
+          justify-content: space-between;
+          a{
+            font-size: 10px;
+            i{
+              font-size: 15px;
+            }
+          }
+        }
+    }
+  }

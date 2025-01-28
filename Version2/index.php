@@ -55,7 +55,7 @@ require "./header.php";
         <p class="card-text">
         Son frutas que tienen una semilla grande(hueso) en su interior
         </p>
-        <a class="form-control btn btn-primary mt-2 p-1" href="">Ver Productos</i></a>    
+        <a class="form-control btn btn-primary mt-2 p-1" href="./productos.php">Ver Productos</i></a>    
       </div>
       </div>
 
@@ -66,7 +66,7 @@ require "./header.php";
         <p class="card-text">
         Son Frutas que tienen un sabor agrio o agridulce
         </p>
-        <a class="form-control btn btn-primary mt-2 p-1" href="">Ver Productos</i></a>    
+        <a class="form-control btn btn-primary mt-2 p-1" href="./productos.php">Ver Productos</i></a>    
       </div>
       </div>
 
@@ -77,7 +77,7 @@ require "./header.php";
         <p class="card-text">
         Son frutas que crecen en lugares tropicales con un sabor dulce
         </p>
-        <a class="form-control btn btn-primary mt-2 p-1" href="">Ver Productos</i></a>    
+        <a class="form-control btn btn-primary mt-2 p-1" href="./productos.php">Ver Productos</i></a>    
       </div>
       </div>
 
