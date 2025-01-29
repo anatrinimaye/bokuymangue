@@ -31,7 +31,7 @@ let datosJSON;
         let imagen = document.createElement("img");
         imagen.setAttribute("src", event.foto);
         producto.appendChild(imagen);
-        //Creadno la caja que esta debajo de la imagen
+        //Creando la caja que esta debajo de la imagen
         let info=document.createElement("div");
         info.setAttribute("class", "informacion");
         producto.appendChild(info);

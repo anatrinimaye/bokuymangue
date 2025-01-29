@@ -82,13 +82,13 @@
                 <!-- Usuario -->
                 <div class="usuario d-flex">
                     <!-- Campanilla de notificaciones -->
-                <button type="button" class="btn btn-primary position-relative">
-                    <i class="fa-solid fa-bell fs-25"></i>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                    99+
-                    <span class="visually-hidden">unread messages</span>
-                </span>
-                </button>
+                    <button type="button" class="btn btn-primary position-relative">
+                            <i class="fa-solid fa-bell fs-25"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            99+
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
                     <!-- Foto del usuario -->
                     <img class="rounded-pill" src="../../img/matu.jpg" alt="">
                     <p class="pt-3">Ana Trini <br> Admin</p>
