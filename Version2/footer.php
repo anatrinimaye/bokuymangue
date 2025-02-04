@@ -6,18 +6,19 @@
  
  <!-- FOOTER -->
 
-<div class="container-fluid py-3 footer">
+<div class="container w-100 py-3 pe-5 footer">
   <div class="container copYenlaces">
     <!-- Copyright -->
-    <div class="container text-center w-25 copy">
+    <div class="container text-center w-25 d-flex copy">
       <div class="pt-2">
-        <p><i class="fa-regular fa-copyright"></i> copyright</p>
+         <p> <i class="fa-regular fa-copyright"></i> Bokuy Mangue
+        </p>
       </div>
     </div>
 
     <!-- Iconos de los contactos -->
     
-      <div class="w-50 enlaces ">
+      <div class="w-50 enlaces">
         <!-- Icono whatsApp -->
         <div class="">
           <a href=""> 
@@ -56,10 +57,6 @@
         </div>
 
       </div>
- 
-
-    
-
   </div>
  
 </div>

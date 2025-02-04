@@ -3,10 +3,33 @@
 .banner{
     background-image: linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.604)),url(../img/fond1.jpg);
     background-position: center;
-    background-size: cover cover;
+    background-size: cover;
     /* background-repeat: no-repeat; */
     height: 150px;
     p{
       text-align: center;
     }
+}
+
+/* CAJA GENERAL DEL CARRITO Y LOS BOTONES */
+.carritoYformul{
+  justify-content: space-between;
+  align-items: center;
+  
+}
+/* Carrito */
+.carrito{
+  width: 900px;
+  text-align: center;
+  box-shadow: 2px 2px 5px black;
+
+}
+
+.botones{
+  button{
+    background-color: #ffffff00;
+    border: none;
+
   }
+
+}

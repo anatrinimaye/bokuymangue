@@ -1,54 +1,44 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="./css/css.css">
-    <link rel="stylesheet" href="./css/heade.css">
+    <link rel="stylesheet" href="../Version2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Version2/css/heade.css">
     
-</head>
-<body>
     <!-- HEADER -->
     <nav class="navbar navbar-expand-lg head " id="header">
-        <div class="container-fluid px-5 py-3">
-            <label class="nomEmp"> BOKUY MANGUE</label>
+        <div class="container-fluid px-5 py-1">
+            <div>
+                <img class="rounded-pill" src="../Version2/img/BMblanco.jpg" style="width:45px ">
+                <label class="nomEmpresa"> BOKUY MANGUE</label>
+            </div>
           
             <!-- <img class="rounded-pill ms-5" style="width:60px" src="./img/logo.png" alt=""> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon bg-light"></span>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
             </button>
            
-            <div class="collapse navbar-collapse alig-item-center cajEnlaces" id="navbarSupportedContent">
-                <div class="bg-ligth d-flex buscador ms-5">
-                    <i class="fa-solid fa-magnifying-glass p-2" style="cursor:pointer"></i>
-                    <div class=" ">
-                        <input class="inpt px-2 " type="search" placeholder="Buscar producto...">
-                    </div>
-                </div>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 alig-item-center">
+            <div class="collapse navbar-collapse cajEnlaces" id="navbarSupportedContent">
+                
+                <ul class="navbar-nav nav justify-content-end col-lg-11 me-auto ms-5">
                     <!-- Inicio -->
-                    <li class="nav-item ps-5">
-                        <a class="nav-link" aria-current="page" href="../Version2/index.php">
+                    <li class="nav-item">
+                        <a class="nav-link px-5" aria-current="page" href="../Version2/index.php">
                            Inicio
                         </a>
                     </li>
                     <!-- Sobre Nosotros -->
-                    <li class="nav-item px-4">
-                        <a class="nav-link" href="../Version2/sobrenosotros.php">
+                    <li class="nav-item">
+                        <a class="nav-link px-5" href="../Version2/sobrenosotros.php">
                             Sobre Nosotros
                         </a>
                     </li>
                     <!-- Productos -->
-                    <li class="nav-item px-4">
-                        <a class="nav-link" href="../Version2/productos.php">
+                    <li class="nav-item">
+                        <a class="nav-link px-5" href="../Version2/productos.php">
                            Productos
                         </a>
                     </li>
                     <!-- Bog -->
-                    <li class="nav-item px-4">
-                        <a class="nav-link" href="./noticias.php">
+                    <li class="nav-item">
+                        <a class="nav-link px-5" href="./noticias.php">
                            Noticias
                         </a>
                     </li>
@@ -57,6 +47,5 @@
         </div>
     </nav>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+    <script src="../Version2/js/bootstrap.min.js"></script>

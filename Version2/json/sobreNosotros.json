@@ -1,0 +1,35 @@
+
+[
+    {
+        "nuestraHistoria":" "
+        
+    },
+    {
+        "nuestraVision":""
+        
+    },
+    {
+        "foto": "../img/ana.png",
+        "nombre": "ANASTASIA TRINIDAD MAYE BOKUY MANGUE"
+    },
+    {
+        "foto": "../img/vero.jpg",
+        "nombre": "VERONICA ANDEME BOKUY MANGUE"
+    },
+    {
+        "foto": "../img/mari.jpg",
+        "nombre": "MARILUZ MOFUMAN BOKUY MANGUE"
+    },
+    {
+        "foto": "../img/jose.jpg",
+        "nombre": "JOSE ANGEL NGOMO BOKUY MANGUE"
+    },
+    {
+        "foto": "../img/rosa.jpg",
+        "nombre": "ROSA MARIA ADA BOKUY MANGUE"
+    },
+    {
+        "foto": "../img/matu.jpg",
+        "nombre": "ESTRELLA MATUTINA OKOMO BOKUY MANGUE"
+    }
+]

@@ -48,7 +48,7 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
-      margin-top: 132px;
+      margin-top: 180px;
       .texto{
         width: 600px;
         text-align: justify;
@@ -81,9 +81,12 @@
       justify-content: space-around;
       flex-wrap: wrap;
       /* Caja de cada categoria */
-      .card{
+      .categoria{
         border: none;
         box-shadow: 1px 2px 2px rgb(0, 0, 0);
+        img{
+          height: 200px;
+        }
       }
 
     }
@@ -105,5 +108,92 @@
       }
     }
    
+
+
+    /* RESPONSIVE */
+  @media (min-width:268px) and (max-width:768px){
+      /*Eslogan*/
+      .banner{
+        height: 450px;
+        
+        /* Titulo */
+        .eslo{
+          font-size: 18px;
+          h3{
+            font-size: 20px;
+            font-weight: bold;
+            padding: 0;
+           
+
+          }
+          h1{
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(255, 225, 0);
+            padding: 0;
+            margin-bottom: 0px;
+          }
+
+        }
+  
+        /*Eslogan*/
+        .eslogan{
+          justify-content:center;
+          align-items: center;
+          /* flex-wrap: wrap; */
+          p{
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+            font-family: cambria;
+            font-weight: bold;
+          }
+        }
+      }
+
+        /*SOBRE NOSOTROS */
+        .leer{
+          margin-top: 20p;
+          margin-bottom: 20px;
+        }
+        .foto{
+          img{
+            border-radius: 2%;
+          }
+        }
+
+        /*CAJA GENERAL DE LAS CATEGORIA DE LOS PRODUCTOS */
+        .titulCategori{
+          text-align: center;
+          margin-bottom: 0px;
+        }
+        .categorias{
+          justify-content: space-around;
+          flex-wrap: wrap;
+          /* Caja de cada categoria */
+          .categoria{
+            width: 28rem;
+            height: 350px;
+            margin-top: 30px;
+            object-fit: cover;
+            img{
+              height: 170px;
+            }
+          }
+
+        }
+        /* NOTICIAS */
+        .noticias{
+          height: 320px;
+          /* background-color: #9f0404; */
+          .carosel{
+            height: 300px;
+            /* img{
+              height: 200px;
+            } */
+          }
+          
+        }
+    }
   
  

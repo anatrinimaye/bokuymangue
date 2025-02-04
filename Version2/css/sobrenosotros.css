@@ -1,5 +1,5 @@
 
-/*SOBRE NOSOTROS */
+
 /* BANNER */
 .banner{
   background-image: linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.604)),url(../img/fond1.jpg);
@@ -12,17 +12,20 @@
   }
 }
 
+
 /*SOBRE NOSOTROS */
 .sobreNos{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* margin-top: 100px; */
-  
-  /* Caja de nuestra vision */
+  margin-top: 50px;
   .texto{
-    width: 600px;
+    width: 700px;
     text-align: justify;
+    font-family: Cambria;
+    .titulo{
+        font-weight: bold;
+    }
   }
   .foto{
    width: 350px;
@@ -31,12 +34,38 @@
     width: 100%;
     height: 100%;
    }
-   
   }
 }
+
+
+
+/*NUESTRA VISION */
+.vision{
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  margin-top: 90px;
+  .texto{
+    width: 600px;
+    text-align: justify;
+    font-family: Cambria;
+    .titulo{
+        font-weight: bold;
+    }
+  }
+  .foto{
+   margin-left: 40px;
+   width: 350px;
+   height: 450px;
+   img{
+    width: 100%;
+    height: 100%;
+   }
+  }
+}
+
 /* QUIENES SOMOS */
 .Qsomos{
-  
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
@@ -60,3 +89,9 @@
   }
 }
 
+/* RESPONSIVE */
+@media (min-width:268px) and (max-width:768px){
+  /* .texto{
+    width: 400px;
+  } */
+}
