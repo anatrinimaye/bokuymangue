@@ -31,7 +31,7 @@
                     <!-- foto de la noticia -->
                     <p class="text-center py-2">Nuevo Contrato con la empresa EGTC</p>
                   <div class="fotoNoticia">
-                    <img src="./img/fond2.jpg" class=""> 
+                    <img src="./img/bm2.jpg" class=""> 
                   </div>
                   <!-- Ver mas -->
                   <p class="d-inline-flex gap-2">
@@ -52,7 +52,7 @@
                     <!-- foto de la noticia -->
                     <p class="text-center py-2">Nuevo Contrato con la empresa EGTC</p>
                   <div class="fotoNoticia">
-                    <img src="./img/fond1.jpg" class=""> 
+                    <img src="./img/bm1.jpg" class=""> 
                   </div>
                   <!-- Ver mas -->
                   <p class="d-inline-flex gap-2">
@@ -73,7 +73,7 @@
                     <!-- foto de la noticia -->
                     <p class="text-center py-2">Nuevo Contrato con la empresa EGTC</p>
                   <div class="fotoNoticia">
-                    <img src="./img/fond3.jpg" class=""> 
+                    <img src="./img/bm3.jpg" class=""> 
                   </div>
                   <!-- Ver mas -->
                   <p class="d-inline-flex gap-2">
@@ -94,33 +94,31 @@
                   </div>
                 </div>
 
-
-
             </div>
 
 
             <!-- Caja del aside ultimas noticias -->
-            <div class="cajAside">
+            <div class="cajAside mb-5">
                   <h4 class=" py-2 ps-3">Ultimas Noticias</h4> <hr>
                   <!-- Caja de cada aside -->
                 <div class="cadAside d-flex py-2">
                       <div class="foto">
-                        <img src="./img/fond1.jpg" class="" alt="...">
+                        <img src="./img/bm3.jpg" class="" alt="...">
                       </div>
                       <!-- Enunciado y fecha de las ultimas noticias -->
                       <div class="enunciado">
                         <a href="">
                           <p class="mt-0 px-2">
                             Compra en el supermercado EGTC <br>
-                            <small class="fecha">Enero 23, 2025</small> <hr>
+                            <small class="fecha">Enero 23, 2025</small>
                           </p>  
-                        </a>
-                      </div>
+                        </a><hr>
+                      </div> 
                 </div>
 
                 <div class="cadAside d-flex py-2">
                       <div class="foto">
-                        <img src="./img/fond2.jpg" class="" alt="...">
+                        <img src="./img/bm1.jpg" class="" alt="...">
                       </div>
                       <!-- Enunciado y fecha de las ultimas noticias -->
                       <div class="enunciado">
@@ -135,7 +133,7 @@
                 </div>
                 <div class="cadAside d-flex py-2">
                       <div class="foto">
-                        <img src="./img/fond3.jpg" class="" alt="...">
+                        <img src="./img/bm3.jpg" class="" alt="...">
                       </div>
                       <!-- Enunciado y fecha de las ultimas noticias -->
                       <div class="enunciado">
@@ -149,7 +147,7 @@
                 </div>
                 <div class="cadAside d-flex py-2">
                       <div class="foto">
-                        <img src="./img/cesta.png" class="" alt="...">
+                        <img src="./img/bm0.jpg" class="" alt="...">
                       </div>
                       <!-- Enunciado y fecha de las ultimas noticias -->
                       <div class="enunciado">
@@ -163,7 +161,7 @@
                 </div>
                 <div class="cadAside d-flex py-2">
                       <div class="foto">
-                        <img src="./img/cesta.png" class="py-2" alt="...">
+                        <img src="./img/bm3.jpg" class="" alt="...">
                       </div>
                       <!-- Enunciado y fecha de las ultimas noticias -->
                       <div class="enunciado">

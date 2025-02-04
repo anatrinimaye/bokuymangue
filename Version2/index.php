@@ -30,7 +30,7 @@
      
       <div class="container-fluid ">
           <!--CAJA DEL TEXTO -->
-        <div class="container d-flex col-10 sobreNos">
+        <div class="container d-flex col-9 sobreNos">
           <div class="container-fluid d-flex flex-column align-items-center texto col-9">
               <p class="h1 ps-4 text-center pt-1">Sobre Nosotros</p>
               <p class="col-9 col-lg-12 p-3 mb-3">
@@ -47,7 +47,7 @@
           </div>
            <!--CAJA DE LA IMAGEN -->
           <div class=" foto ">
-            <img class="w-100" src="./img/BMblanco.jpg" alt="">
+            <img class="w-100" src="./img/bm0.jpg" alt="">
           </div>
       </div>
     </div>
@@ -112,19 +112,19 @@
               <div class="carousel-inner noticia">
                 <div class="carousel-item active carosel">
                   <p class="h5 text-center">Nuevo contrato con la empresa EGTC</p>
-                  <img src="./img/fond1.jpg" class="d-block w-100" alt="...">
+                  <img src="./img/bm1.jpg" class="d-block w-100" alt="...">
                 
                   
                 </div>
                 <div class="carousel-item carosel">
                 <p class="h5 text-center">Nuevo contrato con la empresa EGTC</p>
-                  <img src="./img/fond2.jpg" class="d-block w-100" alt="...">
+                  <img src="./img/bm2.jpg" class="d-block w-100" alt="...">
                   
                   
                 </div>
                 <div class="carousel-item carosel">
                   <p class="h5 text-center">Nuevo contrato con la empresa EGTC</p>
-                  <img src="./img/fond3.jpg" class="d-block w-100" alt="...">
+                  <img src="./img/bm3.jpg" class="d-block w-100" alt="...">
                 </div>
               </div>
               <!-- Botones del carrousel -->

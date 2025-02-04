@@ -29,10 +29,10 @@
      
 <div class="container-fluid mt-5">
           <!--CAJA DEL TEXTO -->
-      <div class="container w-75 d-flex col-12 sobreNos ">
+      <div class="container d-flex col-12 sobreNos ">
           <div class="container-fluid d-flex flex-column align-items-center texto col-12 mb-3">
               <p class="h1 ps-4 text-center pb-3 titulo">Nuestra Historia</p>
-              <p class="col-9 col-lg-12 px-3 ">
+              <p class="col-8 col-lg-12 px-3 ">
                   La Agropecuaria BOKUY MANGUE es una empresa familiar formada por los
                   hermanos Bokuy Mangue cuyo objetivo es la distribución de bienes y
                   servicios de productos agrícolas en todo el ámbito nacional. Con
@@ -51,7 +51,7 @@
           </div>
            <!--CAJA DE LA IMAGEN -->
           <div class=" foto ">
-            <img class="w-100 rounded" src="./img/BMblanco.jpg" alt="">
+            <img class="w-100" src="./img/bm0.jpg" alt="">
           </div>
       </div>
     </div> 
@@ -65,7 +65,7 @@
         <div class="container w-75 d-flex col-10 vision">
           <!--CAJA DE LA IMAGEN -->
          <div class="foto py-5">
-            <img class="w-100 " src="./img/BMblanco.jpg" alt="">
+            <img class="w-100 " src="./img/vis1.webp" alt="">
           </div>
           <div class="container-fluid d-flex flex-column align-items-center texto col-12">
               <p class="h1 ps-4 text-center pb-3 titulo">Nuestra Vision</p>

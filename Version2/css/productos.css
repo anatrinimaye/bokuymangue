@@ -63,11 +63,15 @@
         .btnYreseñas{
           justify-content: space-between;
           align-items: center;
+          i{
+            cursor: pointer;
+          }
           .btnAgregar{
                border-radius: 50px;
                 height: 25px;
                 i{
                   font-size: 12px;
+                  
                 }
           }
     }
