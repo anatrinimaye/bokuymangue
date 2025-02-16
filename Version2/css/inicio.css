@@ -3,7 +3,7 @@
 @import url(./css.css);
 
 /*Eslogan*/
-.banner{
+.bann{
     background-image: linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.604)),url(../img/fondwec3.png);
     background-position: center;
     background-size: cover cover;
@@ -65,7 +65,7 @@
         
       }
       .foto{
-       width: 350px;
+       width: 400px;
        height: 400px;
        /* background-color: #560303af; */
        img{

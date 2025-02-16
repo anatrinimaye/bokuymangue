@@ -52,14 +52,28 @@
         background-color: rgba(0, 128, 0, 0);
     }
 }
-/* Caja de los enlaces y el buscador */
-.cajEnlaces{
-    a:hover{
-        color: rgb(255, 255, 255);
-       font-weight: bold;
-        
-    }
+/* Hover de los enlaces del header*/
+.cajEnlaces li a{
+    position: relative;
+    overflow: hidden;
 }
+.cajEnlaces li a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.3s ease;
+
+}
+.cajEnlaces li a:hover::before{
+    width: 100%;
+    
+}
+
+
 .input.inpt::placeholder{
     font-size: 15px;
     font-family: cambria;
@@ -86,3 +100,14 @@
     }
 }
 
+/* BANNER */
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.604)),url(../img/fond1.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 150px;
+    p{
+      text-align: center;
+    }
+}

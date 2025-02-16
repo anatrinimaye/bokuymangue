@@ -1,15 +1,5 @@
 
-/* BANNER */
-.banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.604)),url(../img/fond1.jpg);
-    background-position: center;
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    height: 150px;
-    p{
-      text-align: center;
-    }
-  }
+
   /* Menu de las categorias */
   .categori{
       border: none;

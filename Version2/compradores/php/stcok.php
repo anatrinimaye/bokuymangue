@@ -6,9 +6,9 @@
 <h2 class="text-center py-4 titulo">STOCK DE LOS PRODUCTOS</h2>
 
 <!-- MODAL PARA EL NUEVO EMPLEADO -->
-<!-- <button type="button" class="btn btn-primary ms-5 mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+<button type="button" class="btn btn-primary ms-5 mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         <i class="fa-solid fa-user-plus"></i> Nuevo Stock
-</button> -->
+</button>
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">

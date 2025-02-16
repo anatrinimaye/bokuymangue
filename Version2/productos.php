@@ -39,21 +39,27 @@
                         </a>
                     </li>
                     <!-- Sobre Nosotros -->
-                    <li class="nav-item px-4">
+                    <li class="nav-item px-1">
                         <a class="nav-link" href="../Version2/sobrenosotros.php">
                             Sobre Nosotros
                         </a>
                     </li>
                     <!-- Productos -->
-                    <li class="nav-item px-4">
+                    <li class="nav-item px-1">
                         <a class="nav-link" href="../Version2/productos.php">
                            Productos
                         </a>
                     </li>
                     <!-- Bog -->
-                    <li class="nav-item ps-4">
+                    <li class="nav-item ps-1">
                         <a class="nav-link" href="./noticias.php">
                            Noticias
+                        </a>
+                    </li>
+                    <!-- Contactanos -->
+                    <li class="nav-item px-3">
+                        <a class="nav-link " href="./contactanos.php">
+                           Contáctanos
                         </a>
                     </li>
                 </ul> 
@@ -287,7 +293,7 @@
 
 
     <!-- FOOTER -->
-    <p class="ms-5 h1 my-5 text-center ">Contactos</p>
+    
     <div class="container-fluid d-flex foot">
       <?php
       require "./footer.php";

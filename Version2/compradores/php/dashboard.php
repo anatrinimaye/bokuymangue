@@ -1,11 +1,9 @@
 <?php
-    require "../../conexion/conex.php";
+    require "../conexion/conex.php";
     require "./plantilla.php";
     
 ?>
-<style>
-    
-</style>
+
  <link rel="stylesheet" href="../css/dashboard.css">
         <!-- DASHBOARD -->
          <div class="container-fliut w-100 pt-5 dash ">

@@ -1,20 +1,11 @@
 
-/* BANNER */
-.banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.604)),url(../img/fond1.jpg);
-    background-position: center;
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    height: 150px;
-    p{
-      text-align: center;
-    }
-}
+
 
 /* CAJA GENERAL DEL CARRITO Y LOS BOTONES */
 .carritoYformul{
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   
 }
 /* Carrito */
@@ -22,14 +13,61 @@
   width: 900px;
   text-align: center;
   box-shadow: 2px 2px 5px black;
+  font-family: cambria;
+  .totalElemnto{
+    .titulo{
+      
+      font-weight: 600;
+    }
+    .precio{
+      font-weight: 800;
+    }
+  }
 
 }
 
+
 .botones{
   button{
-    background-color: #ffffff00;
+    background-color: #33c30b00;
     border: none;
 
   }
-
+  button:hover{
+    
+    background-color: rgb(81, 81, 87);
+    color: white;
+  }
+}
+/* RESPONSIVE */
+@media (min-width:268px) and (max-width:768px){
+  .carrito{
+    width: 880px;
+    .cadaElemnto{
+      
+     .span{
+      display: none;
+     }
+      .img{
+        padding-left: 0px;
+        img{
+          width: 12px;
+        }
+      }
+      .prec{
+        font-size: 15px;
+      }
+      
+    }
+   
+  
+  }
+  .botones{
+    text-align: start;
+    button{
+      font-size: 12px;
+      
+    }
+    
+}
 }

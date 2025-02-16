@@ -1,16 +1,16 @@
 
 <?php
     require "./plantilla.php";
-    require "../conexion/conex.php";
+    require "../../conexion/conex.php";
 ?>
 
 <!-- Titulo Para saber Donde Estamos -->
 <h2 class="text-center py-3 titulo">EMPLEADOS</h2>
 
 <!-- MODAL PARA EL NUEVO EMPLEADO -->
-<button type="button" class="btn btn-primary ms-5 mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+<!-- <button type="button" class="btn btn-primary ms-5 mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         <i class="fa-solid fa-user-plus"></i> Nuevo Empleado
-</button>
+</button> -->
 
         
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

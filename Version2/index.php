@@ -12,7 +12,7 @@
       require "./header.php";
       ?>
           <!-- BANNER -->
-    <div class="container-fluid banner lg-px-5 mb-5 md-px-0">
+    <div class="container-fluid bann lg-px-5 mb-5 md-px-0">
       <div class="container">
         <div class="py-5 text-center eslo md-px-0">
           <h3 class="pt-5">BIENVENIDO A LA</h3>
