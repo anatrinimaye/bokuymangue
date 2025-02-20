@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="./css/noticias.css">
 </head>
 <body>
+  <!-- Contactos antes del header -->
+  <?php
+        require ("./contact.php");
+    ?>
+    <!-- HEADER -->
 
       <?php
           require "./header.php";
@@ -16,7 +21,7 @@
       <!-- BANNER -->
       <div class="container-fluid px-5 mb-5 banner" id="noticia">
             <div class="container">
-              <p class="h1 py-5 text-light">Noticias</p>
+              <p class="h1 py-5 text-light text-center">Noticias</p>
             </div>
       </div>
 

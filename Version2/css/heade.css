@@ -1,4 +1,122 @@
 
+@import url(./css.css);
+
+/* Header */
+.header{
+    height: 100px;
+    
+    font-family: cambria;
+    /* Logo */
+    .logo{
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        align-items: center;
+        p{
+            color: rgb(255, 149, 0);
+            font-weight: bold;
+            span{
+            font-weight: bold;
+            }
+        }    
+    }
+    /* enlaces */
+    .enlaces{
+        justify-content: space-evenly;
+        align-items: center;
+        a{
+            font-size: 16px;
+            color: black;
+        }
+        /* gap: 60px; */
+    }
+    /* Buscador y Boton de cambio de tema */
+    .buscYbtncambio{
+        justify-content: end;
+        align-items: center;
+        .buscador{
+          justify-content: start;
+          align-items: center;
+          input{
+            width: 280px;
+            border: none;
+            outline: none;
+          }
+          i{
+            font-size: 14px;
+          }
+        }
+    }
+}
+
+/* Hover a los elementos del header */
+.enlaces a {
+    position: relative;
+    overflow: hidden;
+  }
+  .enlaces a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 3px;
+    background-color: rgb(255, 188, 3);
+    transition: width 0.3s ease; /* Transición suave del ancho */
+  }
+  .enlaces a:hover::before{
+    width: 100%;
+  }
+
+
+
+
+/* Cambiar de tema */
+.btncamTema{
+    height: 30px;
+    border: none;
+    background-color: #ffffff00;
+    i{
+        font-size: 20px;
+    }
+}
+body.oscuro{
+    background-color: rgb(0, 0, 0);
+    p,a,.dropdown-toggle {
+        color: white;
+    }
+    
+    i{
+        color: white;
+    }
+}
+
+/* RESPONSIVE */
+@media(min-width: 0px) and (max-width:768px){
+    .cajaContactos{
+        .contacts{
+            gap: 30px;
+            span{
+                display: none; 
+            }
+        }
+    }
+    .burger{
+        justify-content: end;
+    }
+}
+@media(min-width: 769px) and (max-width:1122px){
+    .cajaContactos{
+        .contacts{
+            gap: 30px;  
+        }
+    }
+    .burger{
+        justify-content: end;
+    }
+}
+
+
 /* CAJA DEL NAV */
 .head{
     
@@ -79,6 +197,25 @@
     font-family: cambria;
 }
 
+
+/* BANNER DE LAS INTERFACES */
+.banner{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.434), rgba(0, 0, 0, 0.686)),url(../img/fon1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
 /* RESPONSIVE */
 @media (min-width: 268px) and (max-width:768px){
     .buscador{
@@ -97,17 +234,5 @@
             color: white;
             background-color: rgba(0, 128, 0, 0);
         }
-    }
-}
-
-/* BANNER */
-.banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.604)),url(../img/fond1.jpg);
-    background-position: center;
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    height: 150px;
-    p{
-      text-align: center;
     }
 }

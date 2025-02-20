@@ -13,7 +13,7 @@
         <!-- Caja De Navegacion ASIDE -->
         <div class="container aside">
             <!-- Logo -->
-             <div class=" py-3 p-4 logo">
+             <div class=" ps-5 pt-4 logo">
                 <img class="rounded-pill" src="../../img/BMblanco.jpg" alt="">
              </div>
             <div class="container asid">

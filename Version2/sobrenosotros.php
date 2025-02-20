@@ -12,6 +12,11 @@
 </head>
 <body>
 
+<!-- Contactos antes del header -->
+<?php
+        require ("./contact.php");
+    ?>
+
     <?php
     require "../Version2/header.php";
     ?>
@@ -21,7 +26,7 @@
         <!-- BANNER -->
         <div class="container-fluid px-5 banner">
               <div class="container">
-                <p class="h1 py-5 text-light">Sobre Nosotros</p>
+                <p class="h1 py-5 text-light text-center">Sobre Nosotros</p>
               </div>
         </div>
 

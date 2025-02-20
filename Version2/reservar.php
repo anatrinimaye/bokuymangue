@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./css/reservar.css">
 </head>
 <body>
+            <!-- Contactos antes del header -->
+            <?php
+                require ("./contact.php");
+            ?>
         <!-- HEADER -->
         <?php
         require "../Version2/header.php";

@@ -8,18 +8,17 @@
 }
 /* CAJA DE LA IZQUIERDA ASIDE */
 .aside{
-    background-color: rgba(11, 105, 11, 0.775);
+    background-color: rgba(24, 90, 2, 0.893);
     width: 200px;
+    height: 769px;
     .logo{
         img{
             width: 70px;
-            
+            height: 70px;
         }
     }
     a{
-        color: rgb(0, 0, 0);
-      
-        
+        color: rgb(0, 0, 0);  
     }
     /* HACER HOVER EN LOS BOTONES DEL ASIDE*/
     .asid li:hover{
@@ -33,6 +32,7 @@
 }
 /* HEADER DEL CUERPO */
 .header{
+    background-color: rgba(15, 51, 196, 0.329);
     width: calc(100% - 200px);
     .titulo{
         font-family: cambria;
@@ -50,15 +50,16 @@
     /* BUSCADOR */
     .buscador{
         width: 550px;
-        border: 1px solid gray;
+        border: 1px solid rgb(32, 1, 1);
+        background-color: #ffffff00;
         border-radius: 5px;
         /* Input del buscador */
         .inpt{
+            background-color: #ffffff00;
             border-radius: 0px 5px 5px 0px;
             border: none;
-            background-color: none;
+            /* background-color: none; */
             outline: none;
-
         }
     }
     /* USUARIO */
@@ -72,14 +73,12 @@
         p{
             display: none;
         }
-       
         img{
             cursor: pointer;
             height: 55px;
             width: 55px;
         }
         img:hover{
-            
             p{
                 display: block;
             }

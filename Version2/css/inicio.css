@@ -2,13 +2,20 @@
 
 @import url(./css.css);
 
+
 /*Eslogan*/
 .bann{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.566), rgba(0, 0, 0, 0.604)),url(../img/fondwec3.png);
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.434), rgba(0, 0, 0, 0.686)),url(../img/fon2.jpg);
     background-position: center;
-    background-size: cover cover;
-    /* background-repeat: no-repeat; */
-    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    .head{
+      background-color: rgba(250, 235, 215, 0);
+      border-bottom: none;
+    }
+    
     
     /* Titulo */
     .eslo{
@@ -24,7 +31,7 @@
       h1{
         font-size: 25px;
         font-weight: bold;
-        color: rgb(255, 225, 0);
+        color: rgb(255, 157, 0);
        
       }
 
@@ -33,7 +40,7 @@
     /*Eslogan*/
     .eslogan{
       justify-content:center;
-      align-items: center;
+      /* align-items: center; */
       flex-wrap: wrap;
       p{
         color: rgb(255, 255, 255);
@@ -43,53 +50,92 @@
       }
     }
   }
-    /*SOBRE NOSOTROS */
-    .sobreNos{
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-top: 180px;
-      .texto{
-        width: 600px;
-        text-align: justify;
-      }
-      a{
-        font-family: cambria;
-        text-decoration: none;
-        height: 35px;
-        color: white;
-        background-color: rgb(17, 4, 132);
-      }
-      a:hover{
-        background-color: rgb(10, 10, 10);
-        
-      }
-      .foto{
-       width: 400px;
-       height: 400px;
-       /* background-color: #560303af; */
-       img{
-        width: 100%;
-        height: 100%;
-       }
-       
-      }
-    }
 
+  /* Titulos */
+  .titulo{
+    margin-top: 180px;
+    font-style: italic;
+    font-size: 35px;
+    font-weight: 700;
+    color: orangered;
+  }
+
+    /*SOBRE NOSOTROS */
+    .cajaNosotros{
+      .sobreNos{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .texto{
+          text-align: justify;
+          height: auto;
+        }
+        a{
+          font-family: calibri;
+          text-decoration: none;
+          height: 35px;
+          color: white;
+          border-radius: 5px;
+          background-color: rgba(47, 132, 4, 0.804);
+        }
+        a:hover{
+          background-color: rgb(10, 10, 10);
+          
+        }
+        .foto{
+        
+         /* background-color: #560303af; */
+         img{
+          width: 100%;
+         }
+         
+        }
+      }
+  
+    }
+  
     /*CAJA GENERAL DE LAS CATEGORIA DE LOS PRODUCTOS */
     .categorias{
       justify-content: space-around;
-      flex-wrap: wrap;
+      height: auto;
+      
+      h5{
+        font-family: sans-serif;
+        color: rgb(0, 0, 0);
+      }
       /* Caja de cada categoria */
-      .categoria{
+     .categoria{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      .card{
+        height: 290px;
         border: none;
-        box-shadow: 1px 2px 2px rgb(0, 0, 0);
         img{
-          height: 200px;
+          height: 130px;
+        }
+        a{
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          text-decoration: none;
+          height: 35px;
+          font-weight: bolder;
+          color: blue;
         }
       }
-
+     }
     }
+
+    /* CAJA DE LA Productos Mas Comprados */
+    .prodComprados{
+      .comprados{
+        justify-content: center;
+        gap: 30px;
+        border: none;
+        flex-wrap: wrap;
+      }
+    }
+
+
     /* CAJA DE LAS NOTICIAS */
     .noticias{
   
