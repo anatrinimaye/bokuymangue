@@ -3,8 +3,8 @@
 
 /* Header */
 .header{
-    height: 100px;
-    
+    justify-content: space-around;
+    height: 50px;
     font-family: cambria;
     /* Logo */
     .logo{
@@ -43,7 +43,7 @@
             outline: none;
           }
           i{
-            font-size: 14px;
+            font-size: 15px;
           }
         }
     }
@@ -91,30 +91,48 @@ body.oscuro{
     }
 }
 
-/* RESPONSIVE */
-@media(min-width: 0px) and (max-width:768px){
-    .cajaContactos{
-        .contacts{
-            gap: 30px;
-            span{
-                display: none; 
+    /* RESPONSIVE */
+    @media(min-width: 0px) and (max-width:768px){
+        .cajaContactos{
+            .contacts{
+                gap: 30px;
+                span{
+                    display: none;
+                    
+                }
+            }
+        }
+        .burger{
+            justify-content: end;
+        }
+        .header{
+            .logo{
+                gap: 330px;
+                p{
+                    padding-left: 20px;
+                }
             }
         }
     }
-    .burger{
-        justify-content: end;
-    }
-}
-@media(min-width: 769px) and (max-width:1122px){
-    .cajaContactos{
-        .contacts{
-            gap: 30px;  
+    @media(min-width: 769px) and (max-width:1180px){
+        .cajaContactos{
+            .contacts{
+                gap: 30px;
+                
+            }
+        }
+        .header{
+            .logo{
+                gap: 680px;
+                p{
+                    padding-left: 20px;
+                }
+            }
+        }
+        .burger{
+            justify-content: end;
         }
     }
-    .burger{
-        justify-content: end;
-    }
-}
 
 
 /* CAJA DEL NAV */
@@ -210,6 +228,22 @@ body.oscuro{
 
 
 
+/* ICONO DE WHATSAPP FLOTANTE */
+.btnWhtasapp{
+    position: fixed;
+    bottom: 180px;
+    right: 20px;
+    display: block;
+    z-index: 0;
+  
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+}
 
 
 

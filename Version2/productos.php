@@ -325,7 +325,6 @@
     </div>
 </div>
 
-
     <!-- FOOTER -->
     
     <div class="container-fluid d-flex foot">
@@ -339,6 +338,9 @@
         </a>
       </div>
     </div>
+
+
+      
 
     <script src="./js/bootstrap.min.js"></script>
   

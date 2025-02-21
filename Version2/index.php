@@ -10,15 +10,21 @@
 <body>
      
     <!-- Contactos antes del header -->
-    <?php
-        require ("./contact.php");
-    ?>
+     <div>
+      <?php
+          require ("./contact.php");
+      ?>
+     </div>
+    
     <!-- Header -->
-     <?php
+     <div>
+      <?php
             require("./header.php");
         ?>
+     </div>
+     
     <!--CAJA DEL BANNER -->
-    <div class=" bann mt-2 mb-5 md-px-0">
+    <div class=" bann mb-5 md-px-0">
       <!-- Banner -->
       <div class="container">
         <div class="py-5 text-center eslo md-px-0">
@@ -33,11 +39,10 @@
       </div>
       
     </div>
+
      <!-- SOBRE NOSOTROS -->
-     
-      
     <div class="container-fluid cajaNosotros">
-      <p class="text-center titulo pt-4 d-md-flex-column pb-3"> Sobre Nosotros</p>
+      <p class=" titulo pt-4 pb-3"> Sobre Nosotros</p>
         <div class="container d-flex sobreNos py-3">
            <!--CAJA DEL TEXTO -->
           <div class="container texto col-lg-7 col-12 px-3">
@@ -65,165 +70,214 @@
       </div>
     </div>
     
-
-    <!--CAJA DE LAS CATEGORIAS DE LOS PRODUCTOS -->
-    <p class="text-center my-5 titulo">Categorias de Productos</p>
-   
-    
-    <div class="container-fluid categorias px-5 py-2">
-      <!-- Caja general de las cartegoria-->
-      <div class="container categoria d-flex ">
-
-        <div class="card" style="width: 14rem;">
-          <img src="./img/melocoton.webp" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title text-center">De hueso o Drupa</h5>
-            <p class="card-text">
-              Frutas que tienen una semilla grande (hueso)
-            </p>
-            <a class="btn form-control md-col-4 leer" href="./productos.php">
-              Ver Productos <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="card" style="width: 15rem;">
-        <img src="./img/naranja.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-center">Citrico</h5>
-          <p class="card-text">
-              Frutas que tienen un sabor agrio o agridulce
-          </p>
-          <a class="btn form-control md-col-4 leer" href="./productos.php">
-            Ver Productos <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        </div>
-
-        <div class="card" style="width: 15rem;">
-        <img src="./img/melocoton.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-center">Tropicales</h5>
-          <p class="card-text">
-          Frutas que crecen en lugares tropicales con un sabor dulce
-          </p>
-          <a class="btn form-control md-col-4 mt-2 leer" href="./productos.php">
-            Ver Productos <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-        </div>
-
-        <div class="card" style="width: 15rem;">
-        <img src="./img/manzana.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-center">Pomacea</h5>
-          <p class="card-text">
-          Son frutas que tienen una semilla pequeña
-          </p>
-          <a class=" btn form-control md-col-4 leer" href="./productos.php">
-              Ver Productos <i class="fa-solid fa-arrow-right"></i>
-            </a>
-        </div>
-        </div>
+      <!-- HORARIO -->
+      <div class="horario d-flex container-fluid">
+                <!-- Caja del Horario y de Emergencia  -->
+                <div class=" d-flex horari col-8 py-5 px-2">
+                    <!-- Horario -->
+                    <div class=" col-6 px-5 hora">
+                        <div class="container">
+                            <p class="h3 text-center ">Horario de apertura</p> <hr>
+                        </div> 
+                        <div class="container">
+                            <div>
+                                <p>Lunes - Viernes: &nbsp <span>7:00 - 23:00 h</span>  </p>
+                                <p>Sábado - Domingo: &nbsp <span>9:00 - 18:00h</span> </p>
+                                <p class="festi"> Dia/as de Cierre <hr> <span class="text-center"> 8 Diciembre</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Emergencia -->
+                    <div class=" col-5 px-5 pb-5">
+                        <div class="container">
+                            <p class="h3 text-center">Casos de emergencia</p> <hr>
+                        </div>
+                        <div class="container">
+                            <div>
+                                <p class="cont">
+                                    <i class="fa-solid fa-phone" style="color: rgb(199, 104, 1);"></i> &nbsp
+                                    <span> +240 222 546 678</span>
+                                </p>
+                                <span>Su plan de tratamiento está diseñado para un progreso constante, con cada fase implementada rápidamente.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
       </div>
+    
+      <!--CAJA DE LAS CATEGORIAS DE LOS PRODUCTOS -->
+      <div class="container-fluid cajaCategorias">
+        <p class=" my-5 titulo">Categorias de Productos</p>
+        <!-- Caja general de las cartegoria-->
+        <div class="container categorias d-flex">
+          <!-- cada Categoria -->
+            <div class="card categoria ">
+              <div class="foto">
+                <img src="./img/melocoton.webp" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body texto">
+                <h5 class="card-title text-center">De hueso o Drupa</h5>
+                <p class="card-text">
+                  Frutas que tienen una semilla grande (hueso)
+                </p>
+                <a class="btn form-control md-col-4" href="./productos.php">
+                  Ver Productos <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <p class="fs-4 mt-2 conta" id="hueso">0</p>
 
-      
+              </div>
+            </div>
 
-    </div>
+            <!-- cada Categoria -->
+            <div class="card categoria">
+              <div class="foto">
+                <img src="./img/naranja.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body texto">
+                <h5 class="card-title text-center">Citrico</h5>
+                <p class="card-text">
+                  Frutas que tienen un sabor agrio o agridulce
+                </p>
+                <a class="btn form-control md-col-4" href="./productos.php">
+                  Ver Productos <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <p class="fs-4 mt-2 conta" id="citrico">0</p>
+              </div>
+            </div>
+
+            <!-- cada Categoria -->
+            <div class="card categoria">
+              <div class="foto">
+                <img src="./img/naranja.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body texto">
+                <h5 class="card-title text-center">Pomaceas</h5>
+                <p class="card-text">
+                  Son frutas que tienen una semilla pequeña
+                </p>
+                <a class="btn form-control md-col-4" href="./productos.php">
+                  Ver Productos <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <p class="fs-4 mt-2 conta" id="pomacea">0</p>
+              </div>
+            </div>
+
+            <!-- cada Categoria -->
+            <div class="card categoria">
+              <div class="foto">
+                <img src="./img/naranja.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body texto">
+                <h5 class="card-title text-center">Tropicales</h5>
+                <p class="card-text">
+                  Frutas que crecen en lugares tropicales con un sabor dulce
+                </p>
+                <a class="btn form-control md-col-4" href="./productos.php">
+                  Ver Productos <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <p class="fs-4 mt-2 conta" id="tropicales">0</p>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+   
 
     <!-- GALERIA -->
-    <p class="text-center my-5 titulo">Nuestra Galeria</p>
-    <!-- Caja de la Productos Mas Comprados -->
-    <div class="container-fluid px-5 prodComprados">
-        <div class="container d-flex comprados d-flex">
-            <div class="card producto" style="width: 16rem; ">
-              <img src="./img/fon1.jpg" style="height: 240px" class="card-img-top" alt="...">
+    <div class="cajaGaleria">
+        <p class="text-center my-5 titulo">Nuestra Galeria</p>
+        <div class="container d-flex galeria d-flex">
+            <div class="card producto" >
+              <img src="./img/fon1.jpg" class="card-img-top" alt="...">
             </div>
             
-            <div class="card producto" style="width: 16rem; ">
-              <img src="./img/fon4.jpg" style="height: 240px" class="card-img-top" alt="...">
+            <div class="card producto" >
+              <img src="./img/fon4.jpg" class="card-img-top" alt="...">
             </div>
 
-            <div class="card producto" style="width: 16rem; ">
-              <img src="./img/fon2.jpg" style="height: 240px" class="card-img-top" alt="...">
+            <div class="card producto" >
+              <img src="./img/fon2.jpg" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card producto" >
+              <img src="./img/fon3.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card producto" >
+              <img src="./img/fon1.jpg" class="card-img-top" alt="...">
+            </div>
+            
+            <div class="card producto" >
+              <img src="./img/fon4.jpg" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card producto" >
+              <img src="./img/fon2.jpg" class="card-img-top" alt="...">
             </div>
 
             <div class="card producto" style="width: 16rem; ">
               <img src="./img/fon3.jpg" style="height: 240px" class="card-img-top" alt="...">
             </div>
-            <div class="card producto" style="width: 16rem; ">
-              <img src="./img/fon1.jpg" style="height: 240px" class="card-img-top" alt="...">
-            </div>
-            
-            <div class="card producto" style="width: 16rem; ">
-              <img src="./img/fon4.jpg" style="height: 240px" class="card-img-top" alt="...">
-            </div>
-
-            <div class="card producto" style="width: 16rem; ">
-              <img src="./img/fon2.jpg" style="height: 240px" class="card-img-top" alt="...">
-            </div>
-
-            <div class="card producto" style="width: 16rem; ">
-              <img src="./img/fon3.jpg" style="height: 240px" class="card-img-top" alt="...">
-            </div>
-        </div>
-
-        
+        </div> 
     </div>
-
-
 
     <!-- NOTICIAS -->
-    <p class="text-center my-5 titulo">Ultimas Noticias</p>
-    <a href="./noticias.php">
-      <div class="container noticias">
-
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner noticia">
-                <div class="carousel-item active carosel">
-                  <p class="h5 text-center">Nuevo contrato con la empresa EGTC</p>
-                  <img src="./img/bm1.jpg" class="d-block w-100" alt="...">
-                
-                  
-                </div>
-                <div class="carousel-item carosel">
-                <p class="h5 text-center">Nuevo contrato con la empresa EGTC</p>
-                  <img src="./img/bm2.jpg" class="d-block w-100" alt="...">
-                  
-                  
-                </div>
-                <div class="carousel-item carosel">
-                  <p class="h5 text-center">Nuevo contrato con la empresa EGTC</p>
-                  <img src="./img/bm3.jpg" class="d-block w-100" alt="...">
-                </div>
+    <p class="my-5 titulo">Ultimas Noticias</p>
+   
+    <div class="container noticias">
+        <div id="carouselExample" class="carousel slide noticia" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/fon1.jpg" class="d-block w-100" alt="Imagen 1" >
+              <div class="carousel-caption">
+                <h5>Título de la diapositiva 1</h5>
+                <p>Descripción de la diapositiva 1</p>
               </div>
-              <!-- Botones del carrousel -->
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
-      </div>
-    </a>
-        
-    
-    
-    <!-- FOOTER -->
-    <p class="ms-5 h1 my-5 text-center ">Contactos</p>
-    <div class="container-fluid d-flex foot">
-      <?php
-      require "./footer.php";
-      ?>
-      <!-- Flecha para volver al inicio -->
-      <div class="container w-25 text-end flecha">
-        <a href="../Version2/index.php #header" class="btn btn-primary mt-3">
-        <i class="fa-solid fa-angle-up py-2"></i>
-        </a>
+            <div class="carousel-item">
+              <img src="./img/fon2.jpg" class="d-block w-100" alt="Imagen 2">
+              <div class="carousel-caption">
+                <h5>Título de la diapositiva 2</h5>
+                <p>Descripción de la diapositiva 2</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
       </div>
     </div>
+
+     
+    
+    <!-- FOOTER -->
+     <div>
+        <?php
+          require("./footer.php");
+        ?>
+     </div>
+    
+
+
+     <!-- ICONO DE WHATSAPP FLOTANTE -->
+     <div class="btnWhtasapp">
+        <a href="https://wa.me/555658064" target="_blank">
+            <img class="" src="./img/whatsapp.png" alt="WhatsApp">
+        </a>
+    </div>
+      <script>
+        $('.carousel').carousel({
+          interval: 2000 // Tiempo en milisegundos (3 segundos en este ejemplo)
+        });
+      </script>
     
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/contador.js"></script>
    
   
 </body>

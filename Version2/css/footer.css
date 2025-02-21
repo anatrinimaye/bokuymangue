@@ -1,81 +1,27 @@
 
-.footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    
-    /* Container que contiene las tres cajas */
-    .copYenlaces{
-        
-        display: flex;
+.footer {
+    background-color: rgba(0, 68, 53, 0.634);
+    h5{
+        color: black;
+    }
+    i{
+        color: black;
+    }
+    a{
+        text-decoration: none;
+    }
+    .texto{
         justify-content: space-between;
-        align-items: center;
-        /* Caja del copyrigth */
         
-        /* Caja de los contactos iconos de las redes sociales */
-        .enlaces{
-            display: flex;
-            justify-content: space-around;
+    }
+    .icons{
+        justify-content: space-between;
+        a{     
             i{
-                color: black;
-                border-radius: 5px;
-                background: #ffffffeb;
-            }
-            i:hover{
-                background: #93262694;
-            }
-        }
-
-    }
-}
-/* RESPONSIVE */
-@media (min-width:268px) and (max-width:768px){
-    .footer{
-        width: 200px;
-        padding: 0;
-        justify-content: center;
-        /* Container que contiene las tres cajas */
-        .copYenlaces{
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            /* Caja del copyrigth */
-            .copy{
-                width: 200px;
-                p{
-                    font-size: 12px;
-                }
                 
+                border: 1px solid rgb(5, 5, 5);
+                font-size: 16px;
             }
-            /* Caja de los contactos iconos de las redes sociales */
-            .enlaces{
-                /* display: block; */
-                justify-content: start;
-                gap: 6px;
-                i{
-                    color: black;
-                    border-radius: 5px;
-                    background: #93262657;
-                }
-                i:hover{
-                    background: #93262694;
-                }
-            }   
         }
     }
-    .foot{
-        background-color: #059126cf;
-        gap: 20px;
-   }
-    .flecha{
-        margin-top: 4px;
-        padding-left: 7px;
-        margin-right: 10px;
-    }
 }
-/* Caja del footer de las demas paginas */
-.foot{
-     background-color: #059126cf;
-}
-

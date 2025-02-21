@@ -1,9 +1,9 @@
 
     <link rel="stylesheet" href="../Version2/css/heade.css">
     <!-- Header -->
-    <div class="row header pt-2">
+    <div class="d-flex header py-1">
                 <!-- enlaces -->
-            <div class="col-lg-6 d-none d-lg-flex enlaces">
+            <div class="col-lg-4 d-none d-lg-flex enlaces">
                 <a class="nav-link" href="./index.php"> <span>Inicio</span> </a>
                 <a class="nav-link" href="./sobrenosotros.php"> <span> Sobre Nosotros</span></a>
                 <a class="nav-link" href="./productos.php"> <span> Productos</span></a>
@@ -71,6 +71,8 @@
 
 
     </div>
+
+    
     <script>
         function cambiarTema() { 
         document.body.classList.toggle("oscuro"); }

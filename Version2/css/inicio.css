@@ -53,15 +53,18 @@
 
   /* Titulos */
   .titulo{
-    margin-top: 180px;
     font-style: italic;
     font-size: 35px;
     font-weight: 700;
     color: orangered;
+    text-align: center;
   }
 
     /*SOBRE NOSOTROS */
     .cajaNosotros{
+      .titulo{
+        margin-top: 180px;
+      }
       .sobreNos{
         justify-content: center;
         align-items: center;
@@ -93,66 +96,132 @@
       }
   
     }
+
+    /* HOARARIO */
+    .horario{
+      margin-top: 100px;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      .horari{
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        background-color: rgba(0, 0, 0, 0.088);
+
+        /* Horario */
+        .hora{
+          font-weight: 500;
+          .festi{
+              font-weight: 700;
+          }
+        }
+        
+        .h3, .festi{
+          color: rgb(14, 1, 199);
+          text-align: center;
+        }
+        .cont{
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
   
     /*CAJA GENERAL DE LAS CATEGORIA DE LOS PRODUCTOS */
-    .categorias{
-      justify-content: space-around;
+    .cajaCategorias{
+      justify-content: center;
       height: auto;
       
       h5{
-        font-family: sans-serif;
-        color: rgb(0, 0, 0);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 25px;
+        font-weight: 600;
+        font-style: italic;
+        color: rgb(122, 27, 27);
       }
-      /* Caja de cada categoria */
-     .categoria{
+      /* Caja general de las categoria */
+     .categorias{
+      justify-content: space-around;
+      align-items: center;
       flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      .card{
-        height: 290px;
-        border: none;
-        img{
-          height: 130px;
-        }
-        a{
-          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-          text-decoration: none;
-          height: 35px;
-          font-weight: bolder;
-          color: blue;
-        }
+      height: auto;
+        /* Caja de las categorias*/
+        .categoria{
+          
+          height: auto;
+          border: none;
+          width: 250px;
+          .foto{
+            width: 100%;
+            img{
+              width: 100%;
+              height: 170px;
+            }
+          }
+          .texto a{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-decoration: none;
+            font-weight: bolder;
+            color: blue;
+            
+          }
+          /* Numeros del contador */
+          .conta{
+            color: black;
+            font-weight: 700;
+            font-size: 60px;
+            text-align: center;
+            background-color: #7a161660;
+          }
       }
      }
     }
 
-    /* CAJA DE LA Productos Mas Comprados */
-    .prodComprados{
-      .comprados{
+    /* Caja de la galeria */
+    .cajaGaleria{
+      .titulo{
+        margin-top: 80px;
+      }
+      .galeria{
         justify-content: center;
         gap: 30px;
         border: none;
+        border-radius: 0px;
         flex-wrap: wrap;
-      }
-    }
-
-
-    /* CAJA DE LAS NOTICIAS */
-    .noticias{
-  
-      .noticia{
-        cursor: pointer;
-        div{
-         
-         p{
-          color: rgb(2, 89, 10);
-          background-color: rgba(0, 0, 0, 0.221);
-         }
+        .producto{
+          width: 290px;
+          height: 200px;
           img{
-            height: 500px;
+            width: 100%;
+            height: 100%;
           }
         }
       }
     }
+
+    /* CAJA DE LAS NOTICIAS */
+  
+    .noticias{
+      height: 500px;
+      background-color:blueviolet;
+      .noticia{
+        background-color: #6c0a0a;
+        .carousel-item img{
+          height: 500px;
+          width: 100%;
+        }
+        .carousel-caption {
+      position: absolute;
+      left: 10%;
+      bottom: 10%;
+      width: 80%;
+      background-color: rgba(27, 24, 24, 0.793); 
+      color: white;
+      text-align: center;
+    }
+    }
+  } 
    
 
 
