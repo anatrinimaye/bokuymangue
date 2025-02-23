@@ -9,14 +9,17 @@
 </head>
 <body>
   <!-- Contactos antes del header -->
-  <?php
-        require ("./contact.php");
-    ?>
-    <!-- HEADER -->
-
-      <?php
-          require "./header.php";
+  <div>
+    <?php
+          require ("./contact.php");
       ?>
+    </div>
+    <!-- HEADER -->
+  <div>
+    <?php
+      require "../Version2/header.php";
+      ?>
+  </div>
 
       <!-- BANNER -->
       <div class="container-fluid px-5 mb-5 banner" id="noticia">
@@ -184,16 +187,10 @@
 
         <!-- FOOTER -->
           <p class="ms-5 h1 my-5 text-center ">Contactos</p>
-          <div class="container-fluid d-flex foot">
+          <div class="container-fluid foot">
             <?php
             require "./footer.php";
             ?>
-            <!-- Flecha para volver al inicio -->
-            <div class="container w-25 text-end flecha">
-              <a href="../Version2/index.php #header" class="btn btn-primary mt-3">
-              <i class="fa-solid fa-angle-up py-2"></i>
-              </a>
-            </div>
           </div>
 
   

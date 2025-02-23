@@ -203,12 +203,11 @@
     /* CAJA DE LAS NOTICIAS */
   
     .noticias{
-      height: 500px;
-      background-color:blueviolet;
+      height: 600px;
       .noticia{
         background-color: #6c0a0a;
         .carousel-item img{
-          height: 500px;
+          height: 600px;
           width: 100%;
         }
         .carousel-caption {

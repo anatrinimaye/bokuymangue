@@ -3,9 +3,14 @@
 
 /* Header */
 .header{
+    background-color: #ffffff;
+    border-bottom: 1px solid black;
     justify-content: space-around;
     height: 50px;
     font-family: cambria;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     /* Logo */
     .logo{
         justify-content: space-around;
@@ -135,79 +140,7 @@ body.oscuro{
     }
 
 
-/* CAJA DEL NAV */
-.head{
-    
-    background-color: #059126cf;
-    border-bottom: 1px black solid;
-    /* box-shadow: 1px 1px 1px rgb(33, 32, 30); */
-   
-    .nomEmpresa{
-        font-family: cambria;
-        color: rgb(0, 0, 0);
-        font-size: 19px;
-        font-weight: 800;
-    }
-    .nav-item{
-        a{
-            font-family: cambria;
-            font-size: 19px;
-            color: rgb(0, 0, 0);
-            font-weight: 800;
-            
-        }
-    }
-    i{
-        font-size: 14px;
-        color: rgb(0, 0, 0);
-        
-    }
-    
-}
-.inpt::placeholder{
-    font-size: 16px;
-    font-family: cambria;
-    color: rgba(255, 255, 255, 0.578);
-}
 
-/* BUSCADOR */
-.buscador{
-    width: 500px;
-    height: 30px;
-    border: 1px solid rgb(214, 207, 207);
-    border-radius: 5px;
-    
-    /* Input del buscador */
-    .inpt{
-        width: 550px;
-        border-radius: 0px 5px 5px 0px;
-        border: none;
-        background-color: none;
-        outline: none;
-        color: white;
-        background-color: rgba(0, 128, 0, 0);
-    }
-}
-/* Hover de los enlaces del header*/
-.cajEnlaces li a{
-    position: relative;
-    overflow: hidden;
-}
-.cajEnlaces li a::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-color: white;
-    transition: width 0.3s ease;
-
-}
-.cajEnlaces li a:hover::before{
-    width: 100%;
-    
-}
 
 
 .input.inpt::placeholder{

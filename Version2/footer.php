@@ -18,8 +18,6 @@
                 <div class="col-md-2">
 
                 </div>
-                
-
                 <!-- ENLACES RAPIDOS -->
                 <div class="pt-5 col-md-3">
                     <h5>Navegacion</h5>

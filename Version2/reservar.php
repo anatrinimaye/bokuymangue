@@ -10,17 +10,24 @@
 </head>
 <body>
             <!-- Contactos antes del header -->
+            
+        <div>
             <?php
                 require ("./contact.php");
             ?>
+        </div>
+
         <!-- HEADER -->
-        <?php
-        require "../Version2/header.php";
-        ?>
+         <div>
+            <?php
+            require "../Version2/header.php";
+            ?>
+         </div>
+        
         <!-- BANNER -->
         <div class="container-fluid px-5 mb-5 banner" id="noticia">
             <div class="container">
-                <p class="h1 py-5 text-light">Reservar Producto</p>
+                <p class="h1 py-5 text-light text-center">Reservar Producto</p>
             </div>
         </div>
 

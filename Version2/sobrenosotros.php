@@ -1,7 +1,5 @@
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,13 +11,19 @@
 <body>
 
 <!-- Contactos antes del header -->
-<?php
-        require ("./contact.php");
-    ?>
-
+  <div>
     <?php
-    require "../Version2/header.php";
-    ?>
+          require ("./contact.php");
+      ?>
+    </div>
+  <div>
+    <?php
+      require "../Version2/header.php";
+      ?>
+  </div>
+   
+
+   
 
 
         <!-- ************************ CUERPO -->
@@ -34,10 +38,10 @@
      
 <div class="container-fluid mt-5">
           <!--CAJA DEL TEXTO -->
-      <div class="container d-flex col-12 sobreNos ">
-          <div class="container-fluid d-flex flex-column align-items-center texto col-12 mb-3">
+      <div class="container d-flex col-lg-11 col-12 sobreNos">
+          <div class="col-12 col-lg-6 d-flex flex-column align-items-center texto  mb-3">
               <p class="h1 ps-4 text-center pb-3 titulo">Nuestra Historia</p>
-              <p class="col-8 col-lg-12 px-3 ">
+              <p class="col-12 col-lg-12 ">
                   La Agropecuaria BOKUY MANGUE es una empresa familiar formada por los
                   hermanos Bokuy Mangue cuyo objetivo es la distribución de bienes y
                   servicios de productos agrícolas en todo el ámbito nacional. Con
@@ -55,7 +59,7 @@
                 </p>
           </div>
            <!--CAJA DE LA IMAGEN -->
-          <div class=" foto ">
+          <div class=" foto col-lg-5 col-12 ">
             <img class="w-100" src="./img/bm0.jpg" alt="">
           </div>
       </div>
@@ -123,20 +127,13 @@
 </div>
 
 
-
-
  <!-- FOOTER -->
  <p class="ms-5 h1 my-5 text-center ">Contactos</p>
-    <div class="container-fluid d-flex foot">
+    <div class="container-fluid foot">
       <?php
       require "./footer.php";
       ?>
-      <!-- Flecha para volver al inicio -->
-      <div class="container w-25 text-end flecha">
-        <a href="../Version2/index.php #header" class="btn btn-primary mt-3">
-        <i class="fa-solid fa-angle-up py-2"></i>
-        </a>
-      </div>
+      
     </div>
 
 
