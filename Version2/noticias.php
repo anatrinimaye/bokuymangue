@@ -34,19 +34,22 @@
         <div class="container noticias">
             <!-- Caja genereal de las noticias -->
             <div class="cajaNoticias pb-5">
+
                 <!-- Caja de cada noticia -->
-                <div class="noticia mb-3">
+                <div class="noticia mb-3 py-2">
                     <!-- foto de la noticia -->
                     <p class="text-center py-2">Nuevo Contrato con la empresa EGTC</p>
                   <div class="fotoNoticia">
                     <img src="./img/bm2.jpg" class=""> 
                   </div>
                   <!-- Ver mas -->
-                  <p class="d-inline-flex gap-2">
-                    <a class="btn btn-primary align-item-center mt-2 ms-5" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Ver Mas <i class="fa-solid fa-angle-down"></i> 
-                    </a>
-                  </p>
+                  
+                    <p class="d-inline-flex gap-2">
+                      <a class="btn btn-primary align-item-center mt-2 ms-5" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Ver Mas <i class="fa-solid fa-angle-down"></i> 
+                      </a>
+                    </p>
+                  
                   <!-- Texto que apaerce despues del ver mas -->
                   <div class="collapse tarjRespuesta" id="collapseExample2">
                     <div class="card card-body w-100 mb-5">
@@ -98,6 +101,29 @@
                       Some placeholder content for the collapse component.
                       This panel is hidden by default but revealed when the 
                       user activates the relevant trigger.
+                    </div>
+                  </div>
+                </div>
+
+
+
+                 <!-- Caja de cada noticia -->
+                 <div class="noticia mb-3">
+                    <!-- foto de la noticia -->
+                    <p class="text-center py-2">Nuevo Contrato con la empresa EGTC</p>
+                  <div class="fotoNoticia">
+                    <img src="./img/bm2.jpg" class=""> 
+                  </div>
+                  <!-- Ver mas -->
+                  <p class="d-inline-flex gap-2">
+                    <a class="btn btn-primary align-item-center mt-2 ms-5" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Ver Mas <i class="fa-solid fa-angle-down"></i> 
+                    </a>
+                  </p>
+                  <!-- Texto que apaerce despues del ver mas -->
+                  <div class="collapse tarjRespuesta" id="collapseExample2">
+                    <div class="card card-body w-100 mb-5">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                     </div>
                   </div>
                 </div>

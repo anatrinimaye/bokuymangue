@@ -3,18 +3,19 @@
 
  <link rel="stylesheet" href="./css/footer.css">
  <link rel="stylesheet" href="./css/enlaces.css">
- <div class="container-fluid text-center mt-5">
-            <iframe class="col-lg-12 col-md-10" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31895.952644152705!2d11.31416895722213!3d2.1559440107896357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1087cb39922bca4b%3A0x476f8e4519268805!2sEbebiy%C3%ADn%2C%20Guinea%20Ecuatorial!5e0!3m2!1ses!2s!4v1740096832474!5m2!1ses!2s"
+ <div class="text-center mt-5 bg-warning">
+            <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31895.952644152705!2d11.31416895722213!3d2.1559440107896357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1087cb39922bca4b%3A0x476f8e4519268805!2sEbebiy%C3%ADn%2C%20Guinea%20Ecuatorial!5e0!3m2!1ses!2s!4v1740096832474!5m2!1ses!2s"
+                width="100%;"
                 height="370" 
                 style="border:0;" 
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-        </div>
+</div>
 
         <div class="container-fluid footer text-light ps-5">
-            <div class="row ps-5 py-3">
+            <div class="row ps-5 p-3">
                 <div class="col-md-2">
 
                 </div>

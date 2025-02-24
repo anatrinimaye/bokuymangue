@@ -23,7 +23,7 @@
             <!-- Logo -->
              <div class="pt-3 logo">
                 <div class="log ps-5">
-                    <img class="rounded-pill" src="../../img/rosa.jpg" alt="">
+                    <img class="rounded-pill" src="../../../img/ana.png" alt="">
                 </div>
                 <div class="usuar">
                     <p class="pt-2 text-center user"> 
@@ -147,23 +147,12 @@
                 </div>
 
                 <!-- GRAFICOS -->
-                <div class=" mt-3" id="graficos">
-                    <!-- Graficos -->
-                    <div class="">
-                        <!-- Ventas -->
-                        <div class="grafico">
-                            <canvas id="grafVentas"></canvas>
-                        </div>
-                        <!-- Compras -->
-                        <div class="grafico">
-                            <canvas id="grafCompras"></canvas>
-                        </div>
-                    </div>
-                    <!-- caja lateral -->
-                     <div>
+                 <div class="container">
+                    <div id="graficos" >
+                        <canvas class="grafico" id="myChart">
 
-                     </div>
-                    
+                        </canvas>
+                    </div>
                 </div>
                 
 

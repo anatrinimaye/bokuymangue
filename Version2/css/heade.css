@@ -3,7 +3,7 @@
 
 /* Header */
 .header{
-    background-color: #ffffff;
+    background-color: #fff;
     border-bottom: 1px solid black;
     justify-content: space-around;
     height: 50px;
@@ -11,6 +11,8 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    color: rgb(0, 0, 0);
+   
     /* Logo */
     .logo{
         justify-content: space-around;
@@ -18,7 +20,7 @@
         gap: 10px;
         align-items: center;
         p{
-            color: rgb(255, 149, 0);
+            color: rgb(255, 179, 0);
             font-weight: bold;
             span{
             font-weight: bold;
@@ -31,7 +33,7 @@
         align-items: center;
         a{
             font-size: 16px;
-            color: black;
+           
         }
         /* gap: 60px; */
     }
@@ -66,13 +68,17 @@
     left: 0;
     width: 0; 
     height: 3px;
-    background-color: rgb(255, 188, 3);
+    background-color: rgb(255, 179, 0);
     transition: width 0.3s ease; /* Transición suave del ancho */
   }
   .enlaces a:hover::before{
     width: 100%;
   }
 
+  /* Hover para menu hamburguesa */
+  .enlacs a:hover{
+    color: rgb(255, 179, 0)
+  }
 
 
 
@@ -97,7 +103,7 @@ body.oscuro{
 }
 
     /* RESPONSIVE */
-    @media(min-width: 0px) and (max-width:768px){
+    @media(min-width: 0px) and (max-width:468px){
         .cajaContactos{
             .contacts{
                 gap: 30px;
@@ -112,23 +118,50 @@ body.oscuro{
         }
         .header{
             .logo{
-                gap: 330px;
+             
+               
                 p{
                     padding-left: 20px;
                 }
             }
         }
     }
-    @media(min-width: 769px) and (max-width:1180px){
+
+    @media(min-width: 469px) and (max-width:768px){
         .cajaContactos{
             .contacts{
                 gap: 30px;
+                span{
+                    display: none;
+                    
+                }
+            }
+        }
+        .burger{
+            justify-content: end;
+        }
+        .header{
+            .logo{
+               
+                gap: 200px;
+                p{
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+    @media(min-width: 769px) and (max-width:2180px){
+        .cajaContactos{
+            .contacts{
+                width: 400px;
+                gap: 50px;
+               
                 
             }
         }
         .header{
             .logo{
-                gap: 680px;
+                gap: 500px;
                 p{
                     padding-left: 20px;
                 }
@@ -138,11 +171,7 @@ body.oscuro{
             justify-content: end;
         }
     }
-
-
-
-
-
+   
 .input.inpt::placeholder{
     font-size: 15px;
     font-family: cambria;
@@ -177,9 +206,6 @@ body.oscuro{
         margin: 0 auto;
     }
 }
-
-
-
 
 
 

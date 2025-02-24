@@ -1,0 +1,66 @@
+
+body{
+   
+
+    height: auto;
+    background-position: center ;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.245),rgba(0, 0, 0, 0.114)),url(../../img/fon1.jpg); 
+}
+
+/* volver */
+
+.cajaLogin{
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    padding: 20px;
+   
+}
+
+/* Login */
+.login{
+    /* border-radius: 5px; */
+    width: 400px;
+    height: auto;
+    box-shadow: 3px 3px 4px black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    
+    i{
+        font-size: 50px;
+        color: rgb(1, 1, 84);
+    }
+    .cajaTexto{
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .inp{
+        background-color: #ffffff00;
+        color:  rgb(0, 0, 0);
+        width: 300px;
+        border: none;
+        outline: none;
+        border-radius: 0;
+        border-bottom: 1px solid rgb(0, 0, 0);
+    }
+    .inp:focus{
+        border-bottom: 2px solid rgb(30, 1, 133);;
+        /* color: rgb(0, 0, 0); */
+        color:  rgb(1, 1, 84);
+    }
+}
+
+.btnEnviar{
+    font-family: cambria;
+    
+    font-weight: bolder;
+    input{
+        background-color: rgb(1, 1, 84);
+        color: rgb(255, 255, 255);
+    }
+   
+}
+

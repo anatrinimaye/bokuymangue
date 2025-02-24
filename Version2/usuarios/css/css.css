@@ -1,0 +1,17 @@
+
+@import url("./bootstrap.min.css");
+@import url("./all.min.css");
+@import url("./all.css");
+@import url("../webfonts/");
+
+
+:root{
+    --colorRoug: rgba(209, 27, 27, 0.937);
+    --colorBlanc:rgb(253, 253, 253);
+    --colorAmar:rgb(247, 255, 8);
+    --colorAzu:rgba(25, 5, 100, 0.834);
+    --colorazul:rgb(0, 204, 255);
+    --colorVerd: rgba(9, 255, 0, 0.438);
+  }
+
+

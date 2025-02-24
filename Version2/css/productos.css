@@ -200,7 +200,7 @@ body.oscuro{
     flex-wrap: wrap;
     /* Caja de cada producto */
     .producto{
-      height: auto;
+      height: 285px;
       background-color: rgba(6, 164, 1, 0.753);
       box-shadow: 1px 1px 2px black;
       border: none;

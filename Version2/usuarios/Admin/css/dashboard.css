@@ -93,15 +93,16 @@
 
 /* GRAFICAS */
 #graficos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin-top: 50px;
+    /* background-color: rgb(25, 25, 57); */
+    width: 800px;
+    height: 500px;
 }
     /* Cada grafico */
     .grafico{
         margin-top: 20px;
         width: 800px;
-        height: 100px;
+        height: 100%;
         /* margin-bottom: 30px; */
     }
 

@@ -24,18 +24,19 @@
      </div>
      
     <!--CAJA DEL BANNER -->
-    <div class=" bann mb-5 md-px-0">
+    <div class=" bann mb-5">
       <!-- Banner -->
       <div class="container">
-        <div class="py-5 text-center eslo md-px-0">
+        <div class="text-center eslo">
           <h3 class="pt-5">BIENVENIDO A LA</h3>
           <h1>FRUCTÍCOLA BOKUY MANGUE</h1>
         </div>
-        <div class="container mt-5 mb-5 d-flex eslogan">
-            <p class="px-5 md-fs-3 md-px-0">
+        <div class="container d-flex eslogan">
+            <p class="col-12 col-lg-6">
               SÉ COMO UNA FRUTA: <br/> 
               <span>BELLA POR FUERA SALUDABLE POR DENTRO</span>
             </p>
+        </div>
       </div>
       
     </div>
@@ -64,7 +65,7 @@
                 </a>
           </div>
            <!--CAJA DE LA IMAGEN -->
-          <div class="col-lg-5 col-12 foto">
+          <div class="col-lg-5 col-10 foto">
             <img class="" src="./img/bm0.jpg" alt="">
           </div>
       </div>
@@ -73,9 +74,9 @@
       <!-- HORARIO -->
       <div class="horario d-flex container-fluid">
                 <!-- Caja del Horario y de Emergencia  -->
-                <div class=" d-flex horari col-8 py-5 px-2">
+                <div class=" d-flex horari col-12 col-lg-8 py-5 px-2">
                     <!-- Horario -->
-                    <div class=" col-6 px-5 hora">
+                    <div class="col-md-12 col-lg-6 px-5 hora">
                         <div class="container">
                             <p class="h3 text-center ">Horario de apertura</p> <hr>
                         </div> 
@@ -88,7 +89,7 @@
                         </div>
                     </div>
                     <!-- Emergencia -->
-                    <div class=" col-5 px-5 pb-5">
+                    <div class="col-md-4 col-lg-5 px-5 pb-5">
                         <div class="container">
                             <p class="h3 text-center">Casos de emergencia</p> <hr>
                         </div>
@@ -276,6 +277,7 @@
         });
       </script>
     
+    <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/contador.js"></script>
    

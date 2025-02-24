@@ -11,23 +11,22 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 550px;
-    .head{
-      background-color: rgba(250, 235, 215, 0);
-      border-bottom: none;
-    }
+   
     
     
     /* Titulo */
     .eslo{
       font-size: 20px;
       font-family: cambria;
+      padding-top: 50px;
       color: rgb(255, 255, 255);
-      
+      /* Bienvenido a la */
       h3{
         font-size: 20px;
         font-weight: bold;
   
       }
+      /* fructicola Bokuy Mangue */
       h1{
         font-size: 25px;
         font-weight: bold;
@@ -40,9 +39,10 @@
     /*Eslogan*/
     .eslogan{
       justify-content:center;
-      /* align-items: center; */
-      flex-wrap: wrap;
+      align-items: center;
+      /* flex-wrap: wrap; */
       p{
+        padding-top: 90px;
         color: rgb(255, 255, 255);
         font-size: 30px;
         font-family: cambria;
@@ -62,9 +62,7 @@
 
     /*SOBRE NOSOTROS */
     .cajaNosotros{
-      .titulo{
-        margin-top: 180px;
-      }
+      
       .sobreNos{
         justify-content: center;
         align-items: center;
@@ -228,57 +226,68 @@
   @media (min-width:268px) and (max-width:768px){
       /*Eslogan*/
       .banner{
-        height: 450px;
-        
-        /* Titulo */
-        .eslo{
-          font-size: 18px;
-          h3{
-            font-size: 20px;
-            font-weight: bold;
-            padding: 0;
-           
-
-          }
-          h1{
-            font-size: 20px;
-            font-weight: bold;
-            color: rgb(255, 225, 0);
-            padding: 0;
-            margin-bottom: 0px;
-          }
-
-        }
-  
-        /*Eslogan*/
-        .eslogan{
-          justify-content:center;
-          align-items: center;
-          /* flex-wrap: wrap; */
-          p{
-            padding: 0;
-            margin: 0;
-            font-size: 20px;
-            font-family: cambria;
-            font-weight: bold;
-          }
-        }
+        height: 200px;
+       /*Eslogan*/
+    .eslogan{
+      p{
+        padding-top: 900px;
+        color: rgb(255, 255, 255);
+        font-size: 17px;
+      }
+    }
       }
 
         /*SOBRE NOSOTROS */
-        .leer{
-          margin-top: 20p;
-          margin-bottom: 20px;
-        }
-        .foto{
-          img{
-            border-radius: 2%;
+        .cajaNosotros{
+          .titulo{
+            margin-top: 20px;
+          }
+          .leer{
+            margin-top: 10px;
+          }
+          .foto{
+            img{
+              margin-top: 20px;
+            }
           }
         }
+        
+
+
+         /* HOARARIO */
+    .horario{
+ 
+      margin-top: 50px;
+     
+      .horari{
+        flex-direction: column;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0.088);
+
+        /* Horario */
+        .hora{
+          padding: 10px;
+          font-weight: 500;
+          .festi{
+              font-weight: 700;
+          }
+        }
+        
+        .h3, .festi{
+          color: rgb(14, 1, 199);
+          text-align: center;
+        }
+        .cont{
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
 
         /*CAJA GENERAL DE LAS CATEGORIA DE LOS PRODUCTOS */
-        .titulCategori{
+        .titulo{
           text-align: center;
+          font-size: 25px;
           margin-bottom: 0px;
         }
         .categorias{
@@ -296,18 +305,29 @@
           }
 
         }
-        /* NOTICIAS */
-        .noticias{
-          height: 320px;
-          /* background-color: #9f0404; */
-          .carosel{
-            height: 300px;
-            /* img{
-              height: 200px;
-            } */
-          }
-          
+        
+    /* CAJA DE LAS NOTICIAS */
+  
+    .noticias{
+      height: 400px;
+      
+      .noticia{
+        
+        .carousel-item img{
+          height: 400px;
+          width: 100%;
         }
+        .carousel-caption {
+      position: absolute;
+      left: 10%;
+      width: 80%;
+      height: 120px;
+      background-color: rgba(27, 24, 24, 0.793); 
+      color: white;
+      text-align: center;
     }
+    }
+  } 
+}
   
  
