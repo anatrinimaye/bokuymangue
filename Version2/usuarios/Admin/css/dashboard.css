@@ -5,18 +5,19 @@
 
 .cajaGeneral{
     height: 100vh;
-    flex-wrap: wrap;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 /* CAJA DE LA IZQUIERDA ASIDE */
 .aside{
-    background-color: rgba(24, 90, 2, 0.893);
-    width: 200px;
+    
+    background-color: rgba(0, 127, 13, 0.893);
+    width: 250px;
     height: 100%;
     .logo{
         .log{
             img{
-                width: 70px;
-                height: 70px;
+                width: 80px;
+                height: 80px;
             }
         }
         .usuar{
@@ -34,7 +35,8 @@
         
     }
     a{
-        color: rgb(0, 0, 0);   
+        color: rgb(0, 0, 0); 
+        font-weight: 700;  
     }
     /* HACER HOVER EN LOS BOTONES DEL ASIDE*/
     .asid li:hover{
@@ -49,7 +51,10 @@
 /* HEADER DEL CUERPO */
 .cuerpo{
     background-color: rgba(15, 51, 196, 0.329);
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
+    .tit{
+        font-size: 30px;
+    }
   
 }
 /* Texto e icono buger antes de las tarjetas */
@@ -63,13 +68,14 @@
     .cajas{
         justify-content: space-between;
         align-content: center;
-        
+        flex-wrap: wrap;
         .caja{
-            width: 200px;
-            height: 100px;
+            width: 250px;
+            height: 150px;
             background-color: #ffffffe2;
             text-align: center;
-            box-shadow: 1px 1px 2px black;
+            margin-top: 20px;
+            box-shadow: 2px 2px 3px black;
 
             .dasNum{
                 /* color: white; */
@@ -82,27 +88,98 @@
                 font-family: cambria;
             }
             i{
-                color: black;
+                color: rgb(255, 128, 0);
                 font-weight: bold;
-               font-size: 18px;
+               font-size: 35px;
                 
             }
         }
     }
 }
 
+
+/* Offcanvas */
+.menuBurger{
+    a{
+        font-weight: normal;
+        font-family: cambria;
+    }
+}
+
+
 /* GRAFICAS */
 #graficos{
     margin-top: 50px;
     /* background-color: rgb(25, 25, 57); */
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    height: 350px;
 }
     /* Cada grafico */
     .grafico{
         margin-top: 20px;
-        width: 800px;
+        width: 100%;
         height: 100%;
         /* margin-bottom: 30px; */
     }
 
+
+    /* Usuario */
+    .usuario{
+        /* background-color: #ab2727; */
+        .log{
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .user{
+            p{
+                font-size: 14px;
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+                span{
+                    color: rgb(0, 0, 0);
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+        }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+    /* RESPONSIVE */
+    @media(min-width: 0px) and (max-width: 768px){
+        .cajaGeneral{
+            height: auto;
+            width: 100%;
+            
+        }
+        .aside{
+            display: none;
+           }
+           .cuerpo{
+            width: 100%;
+            .tit{
+                font-size: 12px;
+                padding-top: 12px;
+                text-align: start;
+                }
+           }
+
+         
+       
+
+    }
+
+
+
+    
