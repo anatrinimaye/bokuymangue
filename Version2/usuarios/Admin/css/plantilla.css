@@ -1,24 +1,39 @@
-@import url("../../css/all.css");
-@import url("../../css/all.min.css");
-@import url("../../css/bootstrap.min.css");
-/* CAJA GENERAL QUE CONTIENE EL ASIDE Y EL CUERPO */
+@import url(../../css/enlaces.css);
+
 .cajaGeneral{
     height: 100vh;
-    flex-wrap: wrap;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 /* CAJA DE LA IZQUIERDA ASIDE */
 .aside{
-    background-color: rgba(24, 90, 2, 0.893);
-    width: 200px;
-    height: 769px;
+    
+    background-color: rgba(0, 127, 13, 0.893);
+    width: 250px;
+    height: 100%;
     .logo{
-        img{
-            width: 70px;
-            height: 70px;
+        .log{
+            img{
+                width: 80px;
+                height: 80px;
+            }
         }
+        .usuar{
+            p{
+                font-size: 15px;
+                font-weight: bold;
+                color: white;
+                span{
+                    color: rgb(248, 227, 227);
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+        }
+        
     }
     a{
-        color: rgb(0, 0, 0);  
+        color: rgb(0, 0, 0); 
+        font-weight: 700;  
     }
     /* HACER HOVER EN LOS BOTONES DEL ASIDE*/
     .asid li:hover{
@@ -31,57 +46,123 @@
     }
 }
 /* HEADER DEL CUERPO */
-.header{
+.cuerpo{
     background-color: rgba(15, 51, 196, 0.329);
-    width: calc(100% - 200px);
-    .titulo{
-        font-family: cambria;
-        font-weight: bold;
+    width: calc(100% - 250px);
+    height: 100vh;
+    .tit{
+        font-size: 30px;
     }
-    
+  
 }
-/* Caja que contiene el buscador y al usuario conectado */
+/* Texto e icono buger antes de las tarjetas */
 .head{
-    height: 90px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    
-    
-    /* BUSCADOR */
-    .buscador{
-        width: 550px;
-        border: 1px solid rgb(32, 1, 1);
-        background-color: #ffffff00;
-        border-radius: 5px;
-        /* Input del buscador */
-        .inpt{
-            background-color: #ffffff00;
-            border-radius: 0px 5px 5px 0px;
-            border: none;
-            /* background-color: none; */
-            outline: none;
-        }
-    }
-    /* USUARIO */
-    .usuario{
-       justify-content: space-evenly;
-       align-items: center;
-        width: 270px;
-        i{
-            font-size: 25px;
-        }
-        p{
-            display: none;
-        }
-        img{
-            cursor: pointer;
-            height: 55px;
-            width: 55px;
-        }
-        img:hover{
+}
+
+/* TARJETAS */
+.dash{
+    .cajas{
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
+        .caja{
+            width: 250px;
+            height: 150px;
+            background-color: #ffffffe2;
+            text-align: center;
+            margin-top: 20px;
+            box-shadow: 2px 2px 3px black;
+
+            .dasNum{
+                /* color: white; */
+                font-weight: bolder;
+            }
             p{
-                display: block;
+                color: black;
+                font-weight: bold;
+                font-size: 18px;
+                font-family: cambria;
+            }
+            i{
+                color: rgb(255, 128, 0);
+                font-weight: bold;
+               font-size: 35px;
+                
             }
         }
     }
 }
+
+
+/* Offcanvas */
+.menuBurger{
+    a{
+        font-weight: normal;
+        font-family: cambria;
+    }
+}
+
+
+/* GRAFICAS */
+#graficos{
+    margin-top: 50px;
+    /* background-color: rgb(25, 25, 57); */
+    width: 100%;
+    height: 350px;
+}
+    /* Cada grafico */
+    .grafico{
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+        /* margin-bottom: 30px; */
+    }
+
+
+    /* Usuario */
+    .usuario{
+        /* background-color: #ab2727; */
+        .log{
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .user{
+            p{
+                font-size: 14px;
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+                span{
+                    color: rgb(0, 0, 0);
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+        }
+        
+    }
+
+
+     /* RESPONSIVE */
+     @media(min-width: 0px) and (max-width: 768px){
+        .cajaGeneral{
+            height: auto;
+            width: 100%;
+            
+        }
+        .aside{
+            display: none;
+           }
+           .cuerpo{
+            width: 100%;
+            .tit{
+                font-size: 12px;
+                padding-top: 12px;
+                text-align: start;
+                }
+           }
+
+    }
