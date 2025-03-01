@@ -66,13 +66,14 @@
                 </button>
 
                     <!-- Tabla de los Empleados -->
- <div class="container table-responsive">
-    <table class="table table-hover table-striped text-center">
+ <div class="container ">
+    <table class="table table-responsive table-hover table-striped text-center">
         <thead>
             <th>FOTO</th>
             <th>NOMBRE</th>
             <th>PRECIO</th>
             <th>CATEGORIA</th>
+            <th>STOCK</th>
             <th colspan="2">ACCIONES</th>
         </thead>
         <tbody>
@@ -83,6 +84,7 @@
                 <td>Cebolla</td>
                 <td>250 XFA</td>
                 <td>Citrico</td>
+                <td>2000</td>
                 <td>
                     <a href="" class="btn btn-primary">
                         <i class="fa-solid fa-pen-to-square"></i>

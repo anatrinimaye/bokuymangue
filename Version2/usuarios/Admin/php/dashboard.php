@@ -1,6 +1,5 @@
 <?php
     require "../../conexion/conex.php";
-    
 ?>
 
 
@@ -28,7 +27,7 @@
                 <div class="usuar">
                     <p class="pt-2 text-center user"> 
                         ANA TRINI 
-                        <span> anatrinimaye@gmail.com </span>
+                        <span> trinimaye@gmail.com </span>
                     </p>
                     
                 </div>

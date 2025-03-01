@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empleado</title>
+    <title>admin</title>
     <link rel="stylesheet" href="../css/plantilla.css">
 </head>
 <body>
 
 <div class="cajaGeneral d-flex">
 
-
+    <div>
+        <?php
+            require("./aside.php");
+        ?>
+    </div>
 <!-- Button trigger modal -->
 
     <!-- Modal De Registrar Nuevo empleado-->
@@ -24,22 +28,22 @@
             <div class="modal-body">
                 <form action="">
                     <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel"> REGISTRAR NUEVO EMPLEADO</h1>
-                    <input class="form-control mt-4" placeholder="seleccione la foto" name="" type="file">
-                    <input class="form-control mt-4" placeholder="Nombre" name="" type="text">
-                    <input class="form-control mt-4" placeholder="Apellidos" name="" type="text">
-                    <input class="form-control mt-4" placeholder="Telefono" name="" type="text">
-                    <input class="form-control mt-4" placeholder="Fecha Contratacion" name="" type="date">
+                    <input class="form-control mt-4" placeholder="seleccione la foto" name="foto" type="file">
+                    <input class="form-control mt-4" placeholder="Nombre" name="nom" type="text">
+                    <input class="form-control mt-4" placeholder="Apellidos" name="apel" type="text">
+                    <input class="form-control mt-4" placeholder="Telefono" name="tel" type="text">
+                    <input class="form-control mt-4" placeholder="Fecha Contratacion" name="fecha" type="date">
                     <select name="" id="" class="form-control mt-4">
-                        <option value="">Cargo</option>
-                        <option value="">Director</option>
-                        <option value="">Secretaria</option>
+                        <option value="">Rol</option>
+                        <option value="">Vendedor</option>
+                        <option value="">Comprador</option>
                     </select>
                     <select name="" id="" class="form-control mt-4">
                         <option value="">Estado</option>
                         <option value="">Activo</option>
                         <option value="">Inactivo</option>
                     </select>
-                    <input class="form-control btn btn-success mt-4" value="REGISTRAR EMPLEADO" name="" type="submit">
+                    <input class="form-control btn btn-success mt-4" value="REGISTRAR EMPLEADO" name="btnEnviar" type="submit">
                 </form>
             </div>
 
@@ -47,11 +51,7 @@
     </div>
     </div>
 
-    <div>
-        <?php
-            require("./aside.php");
-        ?>
-    </div>
+   
 
      <!-- Caja de los Contenidos CUERPO -->
  <div class="cuerpo px-5">
@@ -82,7 +82,8 @@
                                 <th>CARGO</th>
                                 <th>FECHA CONTRATACION</th>
                                 <th>ESTADO</th>
-                                <th colspan="2">ACCIONES</th>
+                                <th>SALARIO</th>
+                                <th>ACCION</th>
                             </thead>
                             <tbody>
                                 <tr>
@@ -97,14 +98,10 @@
                                     <td >
                                         <p class="text-success fw-bold activa">Activo</p>
                                     </td>
+                                    <td>100000</td>
                                     <td>
                                         <a href="" class="btn btn-primary">
                                             <i class="fa-solid fa-pen-to-square"></i>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="" class="btn btn-danger">
-                                        <i class="fa-solid fa-trash"></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -113,18 +110,12 @@
                     </div>
                 </div>   
         </div>
+</div>   
 </div>
 
-   
-</div>
 
 
 
-
-
-
-<script type="module" src="../js/bootstrap.min.js"></script>
-    
 </body>
 </html>
 

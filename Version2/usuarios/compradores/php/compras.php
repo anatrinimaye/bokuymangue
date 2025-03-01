@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +11,8 @@
 
 <div class="cajaGeneral d-flex">
 
-
-
-
-    <!-- Modal De Registrar Nuevo Proveedor-->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+ <!-- Modal De Registrar Nuevo Proveedor-->
+ <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header border-0">
@@ -32,7 +28,7 @@
                     <input class="form-control input" type="date">
                     <label class="mt-2 ms-2 text-secondary">Fin_Contrato</label> 
                     <input class="form-control input" type="date">
-                    <input class="form-control btn btn-success mt-5" type="submit" value="REGISTRAR PROVEEDOR">
+                    <input class="btn btn-primary mt-5" type="submit" value="REGISTRAR PROVEEDOR">
                                 
                 </form>
             </div>
@@ -40,6 +36,9 @@
         </div>
     </div>
     </div>
+
+
+
 
     <div>
         <?php
@@ -52,47 +51,39 @@
                 <?php
                     require("./header.php");
                 ?>
-                <!-- MODAL PARA EL NUEVO EMPLEADO -->
-                
-
                 <!-- DASHBOARD -->
                 <div class="container-fliud w-100 pt-3 dash mb-3">
-                <p class="text-center h2 mb-5 fw-bold">PROVEEDORES</p>
-                
-                <!-- Boton Modal De Registrar Nuevo empleado -->
-                    <button type="button" class="btn btn-primary ms-5 mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        <i class="fa-solid fa-user-plus"></i> Nuevo Proveedor
+                <p class="text-center h2 mb-5 fw-bold">COMPRAS</p>
+
+                <!-- Boton Modal De Registrar Nueva Compra -->
+                <button type="button" class="btn btn-primary ms-5 mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <i class="fa-solid fa-plus"></i> Nueva Compra
                     </button>
+               
 
-
-                    <!-- Tabla de los Proveedores -->
-                    <div class="container table-responsive">
+                    <!-- Tabla de las Compras -->
+ <div class="container table-responsive">
     <table class="table table-hover table-striped text-center">
         <thead>
-            <th>NOMBRE</th>
-            <th>DIRECCION</th>
-            <th>TELEFONO</th>
-            <th>INCIO CONTRATO</th>
-            <th>FIN CONTRATO</th>
-            <th>ACCION</th>
+            <th>FECHA DE VENTA</th>
+            <th>CLIENTE</th>
+            <th>PRODUCTO</th>
+            <th>EMPLEADO</th>
+            <th>CANTIDAD</th>
+            <th>PRECIO UNITARIO</th>
+            <th>METODO DE PAGO</th>
+            <th>TOTAL</th>
         </thead>
         <tbody>
             <tr>
-                <td>EGTC</td>
-                <td>Oyala</td>
-                <td>+24022319976</td>
-                <td>23/3/2023</td>
-                <td>2/7/2027</td>
-                 <td>
-                    <a href="" class="btn btn-primary">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                    </a>
-                </td>
-                <!--<td>
-                    <a href="" class="btn btn-danger">
-                    <i class="fa-solid fa-trash"></i>
-                    </a>
-                </td> -->
+                <td> 23/4/2025 </td>
+                <td>Ana Trini</td>
+                <td>Manzana </td>
+                <td>Trinidad</td>
+                <td>23</td>
+                <td>1500 XFA</td>
+                <td>Tarjeta</td>
+                <td>25000 XFA</td>
             </tr>
         </tbody>
     </table>
@@ -107,8 +98,9 @@
    
 </div>
 
-<script type="module" src="../js/bootstrap.min.js"></script>
     
+
+
+<script type="module" src="../js/bootstrap.min.js"></script>
 </body>
 </html>
-

@@ -36,7 +36,7 @@
  <div class="container table-responsive">
     <table class="table table-hover table-striped text-center">
         <thead>
-            <th>FECHA DE VENTA</th>
+            <th>FECHA DE COMPRA</th>
             <th>CLIENTE</th>
             <th>PRODUCTO</th>
             <th>EMPLEADO</th>

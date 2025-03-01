@@ -10,12 +10,6 @@
 <body>
 
 <div class="cajaGeneral d-flex">
-
-
-
-
-
-
     <div>
         <?php
             require("./aside.php");

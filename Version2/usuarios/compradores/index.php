@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- <link rel="stylesheet" href="../css/plantilla.css"> -->
    <link rel="stylesheet" href="./css/dashboard.css">
-   
 </head>
 <body>
     
@@ -23,15 +22,9 @@
              
             <div class="container asid">
                 <ul class="nav mt-4">
+                    
+                    
                     <li class="nav-item mt-5">
-                        <a class="nav-link" href="./php/empleados.php">
-                        <i class="fa-solid fa-users-line"></i> Empleados</a>
-                    </li>
-                    <li class="nav-item mt-4">
-                        <a class="nav-link " href="./php/clientes.php">
-                        <i class="fa-solid fa-user-group"></i> Clientes</a>
-                    </li>
-                    <li class="nav-item mt-4">
                         <a class="nav-link" href="./php/proveedores.php">
                         <i class="fa-solid fa-people-group"></i> Proveedores</a>
                     </li>
@@ -39,23 +32,19 @@
                         <a class="nav-link" href="">
                         <i class="fa-solid fa-box-open"></i> Pedidos</a>
                     </li> -->
-                    <li class="nav-item mt-4">
+                    <li class="nav-item mt-5">
                         <a class="nav-link" href="./php/productos.php">
                         <i class="fa-solid fa-apple-whole"></i> Productos</a>
                     </li>
-                    <li class="nav-item mt-4">
+                    <li class="nav-item mt-5">
                         <a class="nav-link" href="">
                         <i class="fa-solid fa-comment-dots"></i> Comentarios</a>
                     </li>
-                    
-                    <li class="nav-item mt-4">
+                    <li class="nav-item mt-5">
                         <a class="nav-link" href="./php/compras.php">
                         <i class="fa-solid fa-cart-shopping"></i> Compras</a>
                     </li>
-                    <li class="nav-item mt-4">
-                        <a class="nav-link " href="./php/ventas.php">
-                        <i class="fa-solid fa-money-bill-1"></i> Ventas</a>
-                    </li>                                       
+                                                        
                 </ul>
                         
             </div>
@@ -68,7 +57,7 @@
                     <div class=" col-lg-11 col-12 d-flex justify-content-center align-items-center">
                         <!-- Texto de Bienvenida -->
                         <div class="col-lg-7 col-12 d-lg-block d-none">
-                            <p class="ps-5  tit" style="font-weight: bold ">BIENVENIDO AL PANEL DEL <span class="text-success fw-bold">ADMIN</span> </p>
+                            <p class="ps-5  tit" style="font-weight: bold ">BIENVENIDO AL PANEL DEL <span class="text-success fw-bold">COMPRADOR</span> </p>
                         </div>
       
                         <!-- Usuario -->
@@ -170,25 +159,19 @@
                                                     <span class="visually-hidden">unread messages</span>
                                                 </span>
                                             </button>
-
                                         </div>
-
                                     </div>
 
                                 <div class="ps-4 menuBurger">
 
-
-                                    <a class="nav-link mt-2" href="./php/empleados.php">
-                                    <i class="fa-solid fa-users-line"></i> Empleados</a>
+                                    <a class="nav-link mt-2" href="">
+                                    <i class="fa-solid fa-users-line"></i> Compras</a>
                                         
                                     <a class="nav-link mt-4 fw-normal" href="./php/clientes.php">
                                     <i class="fa-solid fa-user-group"></i> Clientes</a>
                                             
                                     <a class="nav-link mt-4" href="./proveedores.php">
                                     <i class="fa-solid fa-people-group"></i> Proveedores</a>
-                                        
-                                    <!-- <a class="nav-link mt-4" href="">
-                                    <i class="fa-solid fa-box-open"></i> Pedidos</a> -->
                                         
                                     <a class="nav-link mt-4" href="./productos.php">
                                     <i class="fa-solid fa-apple-whole"></i> Productos</a>
@@ -216,7 +199,7 @@
                     <div class="container cajas d-flex">
                         <div class="caja py-1">
                         <i class="fa-solid fa-users-line py-3"></i>
-                            <p>Empleados</p>
+                            <p>Compras</p>
                             <p class="dasNum">13</p>
                         </div>
                         <div class="caja py-1">
@@ -235,21 +218,13 @@
                             <p>Pedidos</p>
                             <p class="dasNum">200</p>
                         </div> -->
-                        <div class="caja py-1">
-                            <i class="fa-solid fa-user-group py-3"></i>
-                            <p>Clientes</p>
-                            <p class="dasNum">23</p>
-                        </div>
+                        
                     </div>
                 </div>
 
                 <!-- GRAFICOS -->
                  <div class="col-lg-8">
-                    <div class="" id="graficos" >
-                        <canvas class="grafico" id="myChart">
-
-                        </canvas>
-                    </div>
+                 <canvas id="miGraficoCompras"></canvas>
                 </div>
                 
         </div>
@@ -257,9 +232,6 @@
 
 
 
-
-    
-    
 
     <script src="./js/chart.umd.js"></script>
     <script src="./js/graficas.js"></script>

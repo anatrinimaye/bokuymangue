@@ -1,20 +1,84 @@
 
-.dash{
-   
-    .cajas{
-        justify-content: space-evenly;
-        align-content: center;
-        
-        .caja{
-            width: 200px;
-            height: 100px;
-            background-color: #095c73e2;
-            text-align: center;
-            border-radius: 5%;
-            box-shadow: 0dvw;
-            
-            .dasNum{
+@import url("../../css/all.css");
+@import url("../../css/all.min.css");
+@import url("../../css/bootstrap.min.css");
+
+.cajaGeneral{
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* CAJA DE LA IZQUIERDA ASIDE */
+.aside{
+    
+    background-color: rgba(0, 127, 13, 0.893);
+    width: 250px;
+    height: 100%;
+    .logo{
+        .log{
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .usuar{
+            p{
+                font-size: 15px;
+                font-weight: bold;
                 color: white;
+                span{
+                    color: rgb(248, 227, 227);
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+        }
+        
+    }
+    a{
+        color: rgb(0, 0, 0); 
+        font-weight: 700;  
+    }
+    /* HACER HOVER EN LOS BOTONES DEL ASIDE*/
+    .asid li:hover{
+        width: 100%;
+        border-left: 2px solid rgb(253, 250, 250);
+        background-color: rgba(51, 45, 45, 0.471);
+        a{
+            color: white;
+        }
+    }
+}
+/* HEADER DEL CUERPO */
+.cuerpo{
+    background-color: rgba(15, 51, 196, 0.329);
+    width: calc(100% - 250px);
+    .tit{
+        font-size: 30px;
+    }
+  
+}
+/* Texto e icono buger antes de las tarjetas */
+.head{
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* TARJETAS */
+.dash{
+    .cajas{
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
+        .caja{
+            width: 250px;
+            height: 150px;
+            background-color: #ffffffe2;
+            text-align: center;
+            margin-top: 20px;
+            box-shadow: 2px 2px 3px black;
+
+            .dasNum{
+                /* color: white; */
                 font-weight: bolder;
             }
             p{
@@ -24,14 +88,95 @@
                 font-family: cambria;
             }
             i{
-                color: black;
+                color: rgb(255, 128, 0);
                 font-weight: bold;
-               font-size: 18px;
+               font-size: 35px;
                 
             }
-            
-            
         }
     }
 }
 
+
+/* Offcanvas */
+.menuBurger{
+    a{
+        font-weight: normal;
+        font-family: cambria;
+    }
+}
+
+
+/* GRAFICAS */
+#graficos{
+    margin-top: 50px;
+    /* background-color: rgb(25, 25, 57); */
+    width: 100%;
+    height: 350px;
+}
+    /* Cada grafico */
+    .grafico{
+        margin-top: 20px;
+        width: 100%;
+        height: 100%;
+        /* margin-bottom: 30px; */
+    }
+
+
+    /* Usuario */
+    .usuario{
+        /* background-color: #ab2727; */
+        .log{
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .user{
+            p{
+                font-size: 14px;
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+                span{
+                    color: rgb(0, 0, 0);
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+        }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+    /* RESPONSIVE */
+    @media(min-width: 0px) and (max-width: 768px){
+        .cajaGeneral{
+            height: auto;
+            width: 100%;
+            
+        }
+        .aside{
+            display: none;
+           }
+           .cuerpo{
+            width: 100%;
+            .tit{
+                font-size: 12px;
+                padding-top: 12px;
+                text-align: start;
+                }
+           }
+
+    }
+
+
+
+    

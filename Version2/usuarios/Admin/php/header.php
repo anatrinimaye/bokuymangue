@@ -100,7 +100,7 @@
                                         <div class="col-6 d-flex align-items-end mb-3">
                                                     <!-- Campanilla de notificaciones -->
                                             <button type="button" class="btn position-relative">
-                                                    <i class="fa-solid fa-bell fs-5 bg-success p-2 rounded-pill text-light"></i>
+                                                    <i class="fa-solid fa-bell fs-5 bg-warning p-2 rounded-pill text-dark"></i>
                                                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
                                                     9
                                                     <span class="visually-hidden">unread messages</span>
@@ -120,7 +120,7 @@
 
                                     </div>
 
-                                <div class="ps-4 menuBurger">
+                                <div class="ps-4 menuBurger text-light fw-normal">
 
 
                                     <a class="nav-link mt-2" href="./empleados.php">
@@ -132,8 +132,6 @@
                                     <a class="nav-link mt-4" href="./proveedores.php">
                                     <i class="fa-solid fa-people-group"></i> Proveedores</a>
                                         
-                                    <a class="nav-link mt-4" href="">
-                                    <i class="fa-solid fa-box-open"></i> Pedidos</a>
                                         
                                     <a class="nav-link mt-4" href="./productos.php">
                                     <i class="fa-solid fa-apple-whole"></i> Productos</a>
@@ -141,8 +139,8 @@
                                     <a class="nav-link mt-4" href="">
                                     <i class="fa-solid fa-comment-dots"></i> Comentarios</a>
                                             
-                                    <a class="nav-link mt-4" href="./stcok.php">
-                                    <i class="fa-solid fa-box"></i> Stock</a>
+                                    <!-- <a class="nav-link mt-4" href="./stcok.php">
+                                    <i class="fa-solid fa-box"></i> Stock</a> -->
                                         
                                         
                                     <a class="nav-link mt-4" href="">

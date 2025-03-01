@@ -15,7 +15,7 @@
           require ("./contact.php");
       ?>
      </div>
-    
+
     <!-- Header -->
      <div>
       <?php
@@ -24,7 +24,7 @@
      </div>
      
     <!--CAJA DEL BANNER -->
-    <div class=" bann mb-5">
+    <div class="bann mb-5">
       <!-- Banner -->
       <div class="container">
         <div class="text-center eslo">
@@ -38,7 +38,6 @@
             </p>
         </div>
       </div>
-      
     </div>
 
      <!-- SOBRE NOSOTROS -->
@@ -73,10 +72,10 @@
     
       <!-- HORARIO -->
       <div class="horario d-flex container-fluid">
-                <!-- Caja del Horario y de Emergencia  -->
-                <div class=" d-flex horari col-12 col-lg-8 py-5 px-2">
-                    <!-- Horario -->
-                    <div class="col-md-12 col-lg-6 px-5 hora">
+          <!-- Caja del Horario y de Emergencia  -->
+          <div class=" d-flex horari col-12 col-lg-8 py-5 px-2">
+              <!-- Horario -->
+              <div class="col-md-12 col-lg-6 px-5 hora">
                         <div class="container">
                             <p class="h3 text-center ">Horario de apertura</p> <hr>
                         </div> 
@@ -87,9 +86,9 @@
                                 <p class="festi"> Dia/as de Cierre <hr> <span class="text-center"> 8 Diciembre</span> </p>
                             </div>
                         </div>
-                    </div>
-                    <!-- Emergencia -->
-                    <div class="col-md-4 col-lg-5 px-5 pb-5">
+              </div>
+              <!-- Emergencia -->
+              <div class="col-md-4 col-lg-5 px-5 pb-5">
                         <div class="container">
                             <p class="h3 text-center">Casos de emergencia</p> <hr>
                         </div>
@@ -102,8 +101,8 @@
                                 <span>Su plan de tratamiento está diseñado para un progreso constante, con cada fase implementada rápidamente.</span>
                             </div>
                         </div>
-                    </div>
-                </div>
+              </div>
+          </div>
       </div>
     
       <!--CAJA DE LAS CATEGORIAS DE LOS PRODUCTOS -->
