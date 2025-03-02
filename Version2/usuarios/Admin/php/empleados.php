@@ -1,4 +1,11 @@
 
+
+<?php
+require("../../conexion/conex.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin</title>
     <link rel="stylesheet" href="../css/plantilla.css">
+    <link rel="stylesheet" href="../css/empleados.css">
 </head>
 <body>
 
@@ -26,24 +34,51 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="">
+                <form action="" method="POST" enctype="multipart/form-data" id="fromulario">
                     <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel"> REGISTRAR NUEVO EMPLEADO</h1>
-                    <input class="form-control mt-4" placeholder="seleccione la foto" name="foto" type="file">
-                    <input class="form-control mt-4" placeholder="Nombre" name="nom" type="text">
-                    <input class="form-control mt-4" placeholder="Apellidos" name="apel" type="text">
-                    <input class="form-control mt-4" placeholder="Telefono" name="tel" type="text">
-                    <input class="form-control mt-4" placeholder="Fecha Contratacion" name="fecha" type="date">
-                    <select name="" id="" class="form-control mt-4">
-                        <option value="">Rol</option>
-                        <option value="">Vendedor</option>
-                        <option value="">Comprador</option>
+
+                    <input class="form-control mt-4" placeholder="seleccione la foto" id="foto" name="foto" type="file">
+                    <div class="alert alert-danger mt-2" id="errorFoto"></div>
+                    
+                    <input class="form-control mt-4" placeholder="Nombre" id="nom" name="nom" type="text">
+                    <div class="alert alert-danger mt-2" id="errorNombre"></div>
+                    
+                    <input class="form-control mt-4" placeholder="Apellidos" id="apel" name="apel" type="text">
+                    <div class="alert alert-danger " id="errorApellido"></div>
+                    
+                    <input class="form-control mt-4" placeholder="Correo" id="correo" name="correo" type="email">
+                    <div class="alert alert-danger " id="errorCorreo"></div>
+                    
+                    <input class="form-control mt-4" placeholder="Fecha Contratacion" id="fecha" name="fecha" type="date">
+                    <div class="alert alert-danger " id="errorFecha"></div>
+
+                    <select class="form-control mt-4" name="rol" id="rol">
+                        <option value="">Ingrese el Rol</option>
+                        <?php
+                                $mostrarRol= "SELECT * FROM rol";
+                                $resultMostrar= $conex->query($mostrarRol);
+                                while($rol=$resultMostrar->fetch_assoc()){
+                        ?>
+                        <option value="<?php echo $rol['cod_rol']?>"><?php echo $rol['nombre'] ?></option>
+                        <?php
+                            }
+                        ?>
                     </select>
-                    <select name="" id="" class="form-control mt-4">
+                    
+                    <div class="alert alert-danger " id="errorRol"></div>
+                    
+                    <select name="estado" id="estado" class="form-control mt-4">
                         <option value="">Estado</option>
                         <option value="">Activo</option>
                         <option value="">Inactivo</option>
                     </select>
-                    <input class="form-control btn btn-success mt-4" value="REGISTRAR EMPLEADO" name="btnEnviar" type="submit">
+                    <div class="alert alert-danger " id="errorEstado"></div>
+
+                    <input class="form-control mt-4" placeholder="Salario" id="salario" name="salario" type="number">
+                    <div class="alert alert-danger " id="errorsalario"></div>
+                    
+                    <button type="submit" class="btn btn-success form-control mt-4" name="btnRegistrar">REGISTRAR EMPLEADO</button>
+                   
                 </form>
             </div>
 
@@ -75,15 +110,15 @@
                     <div class="container table-responsive">
                         <table class="table table-responsive table-hover table-striped text-center">
                             <thead>
-                                <th>FOTO</th>
-                                <th>NOMBRE</th>
-                                <th>APELLIDOS</th>
-                                <th>TELEFONO</th>
-                                <th>CARGO</th>
-                                <th>FECHA CONTRATACION</th>
-                                <th>ESTADO</th>
-                                <th>SALARIO</th>
-                                <th>ACCION</th>
+                                <th class="bg-success">FOTO</th>
+                                <th class="bg-success">NOMBRE</th>
+                                <th class="bg-success">APELLIDOS</th>
+                                <th class="bg-success">CORREO</th>
+                                <th class="bg-success">TIPO</th>
+                                <th class="bg-success">FECHA CONTRATACION</th>
+                                <th class="bg-success">ESTADO</th>
+                                <th class="bg-success">SALARIO</th>
+                                <th class="bg-success">ACCION</th>
                             </thead>
                             <tbody>
                                 <tr>
@@ -93,7 +128,7 @@
                                     <td>ANA</td>
                                     <td>MAYE</td>
                                     <td>+24022319976</td>
-                                    <td>DG</td>
+                                    <td>Vendedor</td>
                                     <td>24/2/2020</td>
                                     <td >
                                         <p class="text-success fw-bold activa">Activo</p>
@@ -115,6 +150,8 @@
 
 
 
+<script src="../js/regisEmpleado.js"></script>
+<script src="../../sweetalert2/dist/sweetalert2.all.min.js"></script>
 
 </body>
 </html>

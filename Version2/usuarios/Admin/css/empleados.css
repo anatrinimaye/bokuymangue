@@ -1,0 +1,26 @@
+
+
+#errorFoto{
+    display: none;
+}
+#errorNombre{
+    display: none;
+}
+#errorApellido{
+    display: none;
+}
+#errorCorreo{
+    display: none;
+}
+#errorFecha{
+    display: none;
+}
+#errorRol{
+    display: none;
+}
+#errorEstado{
+    display: none;
+}
+#errorsalario{
+    display: none;
+}
