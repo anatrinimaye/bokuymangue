@@ -1,3 +1,32 @@
+
+<?php
+    require $_SERVER['DOCUMENT_ROOT'] ."/BOKUY-MANGUE/Version2/usuarios/conexion/conex.php";
+
+
+    // TOTAL DE EMPLEADOS
+    $totalEmpleados = "SELECT COUNT(*) AS totalEmpleados FROM empleados";
+    $resultEmpleados = $conex->query($totalEmpleados);
+
+    if ($resultEmpleados->num_rows > 0) {
+        $row = $resultEmpleados->fetch_assoc();
+        $cantidad_empleados = $row["totalEmpleados"];
+    } else {
+        $cantidad_empleados = 0;
+    }
+   
+
+    // TOTAL DE PROVEEDORES
+    $totalProveedores =" SELECT COUNT(*) AS totalProveedores FROM proveedores ";
+    $restulProveedores = $conex -> query($totalProveedores);
+    $row = $restulProveedores->fetch_assoc();
+    $cant_proveedores = $row["totalProveedores"];
+    $conex->close();
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,15 +52,15 @@
              
             <div class="container asid">
                 <ul class="nav mt-4">
-                    <li class="nav-item mt-5">
+                    <li class="nav-item mt-3">
                         <a class="nav-link" href="./php/empleados.php">
                         <i class="fa-solid fa-users-line"></i> Empleados</a>
                     </li>
-                    <li class="nav-item mt-4">
+                    <li class="nav-item mt-3">
                         <a class="nav-link " href="./php/clientes.php">
                         <i class="fa-solid fa-user-group"></i> Clientes</a>
                     </li>
-                    <li class="nav-item mt-4">
+                    <li class="nav-item mt-3">
                         <a class="nav-link" href="./php/proveedores.php">
                         <i class="fa-solid fa-people-group"></i> Proveedores</a>
                     </li>
@@ -39,20 +68,24 @@
                         <a class="nav-link" href="">
                         <i class="fa-solid fa-box-open"></i> Pedidos</a>
                     </li> -->
-                    <li class="nav-item mt-4">
+                    <li class="nav-item mt-3">
                         <a class="nav-link" href="./php/productos.php">
                         <i class="fa-solid fa-apple-whole"></i> Productos</a>
                     </li>
-                    <li class="nav-item mt-4">
+                    <li class="nav-item mt-3">
                         <a class="nav-link" href="">
                         <i class="fa-solid fa-comment-dots"></i> Comentarios</a>
                     </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link" href="./php/stock.php">
+                        <i class="fas fa-boxes"></i> Stock</a>
+                    </li>
                     
-                    <li class="nav-item mt-4">
+                    <li class="nav-item mt-3">
                         <a class="nav-link" href="./php/compras.php">
                         <i class="fa-solid fa-cart-shopping"></i> Compras</a>
                     </li>
-                    <li class="nav-item mt-4">
+                    <li class="nav-item mt-3">
                         <a class="nav-link " href="./php/ventas.php">
                         <i class="fa-solid fa-money-bill-1"></i> Ventas</a>
                     </li>                                       
@@ -65,14 +98,14 @@
         <div class="cuerpo px-5">
                 <div class="head d-flex h5 pt-2 px-3">
                     <!-- Texto de Bienvenida -->
-                    <div class=" col-lg-11 col-12 d-flex justify-content-center align-items-center">
+                    <div class="col-lg-11 col-12 d-flex justify-content-center align-items-center">
                         <!-- Texto de Bienvenida -->
                         <div class="col-lg-7 col-12 d-lg-block d-none">
                             <p class="ps-5  tit" style="font-weight: bold ">BIENVENIDO AL PANEL DEL <span class="text-success fw-bold">ADMIN</span> </p>
                         </div>
       
                         <!-- Usuario -->
-                            <div class="col-lg-3 col-12 mb-3">
+                            <div class="col-lg-4 col-12 mb-3">
                                 <div class="dropdown">
                                     <button class="btn dropdown-toggle d-flex align-items-center mt-4 ps-4 border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <div class="usuario d-flex gap-2">
@@ -95,21 +128,14 @@
 
 
 
-                        <div class="col-2 d-flex mb-2 d-lg-block d-none align-items-end">
-                                    <!-- Campanilla de notificaciones -->
-                            <button type="button" class="btn position-relative">
+                        <div class="col-1 d-flex mb-2 d-lg-block d-none align-items-end">
+                             
+
+                                   <!-- Campanilla de notificaciones -->
+                                   <button type="button" class="btn position-relative">
                                     <i class="fa-solid fa-bell fs-5 bg-success p-2 rounded-pill text-light"></i>
                                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
                                     9
-                                    <span class="visually-hidden">unread messages</span>
-                                </span>
-                            </button>
-
-                            <!-- Campanilla de notificaciones -->
-                            <button type="button" class="btn position-relative rounded">
-                                    <i class="fa-solid fa-envelope fs-5 bg-success p-2 rounded-pill text-light"></i>
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
-                                    4
                                     <span class="visually-hidden">unread messages</span>
                                 </span>
                             </button>
@@ -119,8 +145,6 @@
 
                     <!-- Boton de Menu -->
                     <div class="">
-
-                       
 
                         <div class="offcanvas offcanvas-start bg-success" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
                             <div class="offcanvas-header">
@@ -141,26 +165,16 @@
                                                         </div>
                                                         <div class="user mt-2">
                                                             <p>Ana Trini <br> <span>anatrini@mail.com</span></p>
-                                                        
                                                         </div>
                                                     </div>
                                                 </button>
                                                 <ul class="dropdown-menu dropdown-menu-left bg-secondary" >
-                                                    <li><a class="dropdown-item text-dark" href="#">Perfil</a></li>
-                                                    <!-- <li><a class="dropdown-item text-dark" href="#">Configuracion</a></li> -->
-                                                    <li><a class="dropdown-item text-dark" href="../index.php">Cerrar Sesion</a></li>
+                                                    <li><a class="dropdown-item text-ligth" href="#">Perfil</a></li>
+                                                    <li><a class="dropdown-item text-ligth" href="../index.php">Cerrar Sesion</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="col-6 d-flex align-items-end mb-3">
-                                                    <!-- Campanilla de notificaciones -->
-                                            <button type="button" class="btn position-relative">
-                                                    <i class="fa-solid fa-bell fs-5 bg-success p-2 rounded-pill text-light"></i>
-                                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
-                                                    9
-                                                    <span class="visually-hidden">unread messages</span>
-                                                </span>
-                                            </button>
 
                                             <!-- Campanilla de notificaciones -->
                                             <button type="button" class="btn position-relative rounded">
@@ -170,9 +184,7 @@
                                                     <span class="visually-hidden">unread messages</span>
                                                 </span>
                                             </button>
-
                                         </div>
-
                                     </div>
 
                                 <div class="ps-4 menuBurger">
@@ -202,9 +214,6 @@
                                         
                                     <a class="nav-link mt-4" href="">
                                     <i class="fa-solid fa-money-bill-1"></i> Ventas</a>
-                                   
-                                            
-                                    
                                 
                             </div>
                         </div>
@@ -217,12 +226,12 @@
                         <div class="caja py-1">
                         <i class="fa-solid fa-users-line py-3"></i>
                             <p>Empleados</p>
-                            <p class="dasNum">13</p>
+                            <p class="dasNum"><?php echo $cantidad_empleados; ?></p>
                         </div>
                         <div class="caja py-1">
                         <i class="fa-solid fa-people-group py-3"></i>
                             <p>Proveedores</p>
-                            <p class="dasNum">3</p>
+                            <p class="dasNum"> <?php echo $cant_proveedores; ?></p>
                         </div>
                         
                         <div class="caja py-1">
@@ -260,9 +269,9 @@
 
     
     
-
+    <script src="../../js/bootstrap.bundle.min.js"></script>
     <script src="./js/chart.umd.js"></script>
     <script src="./js/graficas.js"></script>
-    <script src="../../js/bootstrap.bundle.min.js"></script>
+   
 </body>
 </html>

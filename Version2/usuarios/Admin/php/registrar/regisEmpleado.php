@@ -1,42 +1,46 @@
 
 <?php
 
-require("../../../conexion/conex.php");
-
-$nombre = $_POST['nom'];
-$apellidos= $_POST['apel'];
-$correo= $_POST['tel'];
-$tipo=
-$salario=
-$estado=
-$fecha_contrato= $_POST['fecha'];
-$foto= $_FILES['foto']['name'];
-
-$destino="../../fotos/";
-$dirTemp = $_FILES['foto']['tmp_name'];
-$nomFoto = explode('.', $foto);
-$extenFoto = strtolower(end($nomFoto));
-$extAdmitidas = array('jpg','png','jpeg');
+require $_SERVER['DOCUMENT_ROOT'] ."/BOKUY-MANGUE/Version2/usuarios/conexion/conex.php"; 
 
 
 
-if(in_array($extenFoto, $extAdmitidas)){
-    if(move_uploaded_file($dirTemp, $destino .$foto)){
-        
-        $regisEmpleado = " INSERT INTO empleados (foto,nombre,apellidos,correo,tipo,fecha_contratacion,estado,salario,cod_rol)
-        VALUES(?,?,?,?,?,?,?,?,?)";
 
-        $stmtInsertar=$conn ->prepare($regisEmpleado);
-        $stmtInsertar ->bind_param('sssssssii',
-        $nombre,$apellido,$edad,$telefono,$profesion,$foto);
-        $stmtInsertar -> execute();
+    $nombre = $_POST['nom']; 
+    $apellidos = $_POST['apel'];
+    $correo = $_POST['correo'];
+    $fecha = $_POST['fecha']; 
+    $rol = $_POST['rol']; 
+    $estado = 'Activo';
+    $salario = $_POST['salario'];
+    $foto = $_FILES['foto']['name'];
 
-        $resultRegistro= $stmtInsertar->get_result();
+    $destino = "../../fotos/";
+    $dirTemp = $_FILES['foto']['tmp_name'];
 
-        if($resultRegistro){
-            echo "Empleados No Registrado";
+    $nombreFoto = explode('.' ,$foto);
+    $extendFoto = strtolower(end($nombreFoto));
+    $extendAdmitidas = array('jpg','webp','jpeg','png');
+
+    if(in_array($extendFoto, $extendAdmitidas)){
+        if(move_uploaded_file($dirTemp, $destino .$foto)){
+
+            $regisEmpleado = " INSERT INTO empleados (foto,nombre,apellidos,correo,fecha_contratacion,estado,salario,cod_rol)
+            VALUES(?,?,?,?,?,?,?,?) ";
+
+            $stmInsertar = $conex -> prepare($regisEmpleado);
+            $stmInsertar -> bind_param('ssssssdi',$foto,$nombre,$apellidos,$correo,$fecha,$estado,$salario,$rol);
+            $stmInsertar -> execute();
+
+            $resultRegistrar = $stmInsertar ->get_result();
+            if( $resultRegistrar){
+                echo "No se pudo Registrar al empleado";
+            }
+            else{
+                echo "Empleado Registrado Exitosamente";
+            }
+
         }else{
-            echo "Empleado Registrado Exitosamente";
+            echo "No se pudo subir la foto";
         }
     }
-}

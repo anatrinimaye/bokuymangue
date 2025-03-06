@@ -145,6 +145,19 @@
         
     }
 
+    .table{
+        thead{
+            th{
+                background-color: rgba(0, 127, 13, 0.893);
+                color: rgb(0, 0, 0);
+                /* font-weight: normal; */
+                
+            }
+        }
+    
+    }
+
+  
 
      /* RESPONSIVE */
      @media(min-width: 0px) and (max-width: 768px){
@@ -166,3 +179,5 @@
            }
 
     }
+
+

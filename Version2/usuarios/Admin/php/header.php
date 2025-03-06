@@ -15,7 +15,7 @@
                         <div class="col-1"></div>
       
                         <!-- Usuario -->
-                            <div class="col-lg-3 col-12 mb-3 align-items-end">
+                            <div class="col-lg-4 col-12 mb-3 align-items-end">
                                 <div class="dropdown">
                                     <button class="btn dropdown-toggle d-flex align-items-center mt-4 ps-4 border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <div class="usuario d-flex gap-2">
@@ -38,7 +38,7 @@
 
 
 
-                        <div class="col-2 d-flex mb-2 d-lg-block d-none align-items-end">
+                        <div class="col-1 d-flex mb-2 d-lg-block d-none align-items-end">
                                     <!-- Campanilla de notificaciones -->
                             <button type="button" class="btn position-relative">
                                     <i class="fa-solid fa-bell fs-5 bg-success p-2 rounded-pill text-light"></i>
@@ -48,14 +48,7 @@
                                 </span>
                             </button>
 
-                            <!-- Campanilla de notificaciones -->
-                            <button type="button" class="btn position-relative rounded">
-                                    <i class="fa-solid fa-envelope fs-5 bg-success p-2 rounded-pill text-light"></i>
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
-                                    4
-                                    <span class="visually-hidden">unread messages</span>
-                                </span>
-                            </button>
+                           
 
                         </div>
                     </div>
@@ -107,14 +100,7 @@
                                                 </span>
                                             </button>
 
-                                            <!-- Campanilla de notificaciones -->
-                                            <button type="button" class="btn position-relative rounded">
-                                                    <i class="fa-solid fa-envelope fs-5 bg-success p-2 rounded-pill text-light"></i>
-                                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
-                                                    4
-                                                    <span class="visually-hidden">unread messages</span>
-                                                </span>
-                                            </button>
+                                         
 
                                         </div>
 
@@ -154,3 +140,4 @@
                     </div>
                     </div>
                 </div>
+

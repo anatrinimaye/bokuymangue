@@ -1,7 +1,10 @@
 
-let ModalInsertar= new bootstrap.Modal(document.getElementById("staticBackdrop"));
+let ModalInsertar= new bootstrap.Modal(document.getElementById("modalinsert"));
 let formulario= document.getElementById("fromulario");
 
+
+
+// REGISTRAR EMPLEADOS
 formulario.addEventListener("submit",function (e) {
     e.preventDefault();
 
@@ -91,3 +94,47 @@ formulario.addEventListener("submit",function (e) {
     objRequest.send(objFormData);
     
 });
+
+
+// MOSTRAR LOS DATOS EN LA TABLA
+
+function mostrarEmpleados(){
+    let objRequest = new XMLHttpRequest();
+
+    objRequest.open("GET","../php/mostrar/mostrarEmpleado.php", true);
+    objRequest.addEventListener("load", ()=> {
+        let respuesta = JSON.parse(objRequest.responseText);
+        console.log(respuesta);
+        
+
+        let tablaEmpleados = document.getElementById("tablaEmpleado");
+        tablaEmpleados.innerHTML='';
+
+        respuesta.forEach(empleado => {
+        tablaEmpleados.innerHTML +=`
+
+            <tr>
+                <td>
+                    <img class="rounded-pill" style="width:50px; height:50px" src="../fotos/${empleado.foto}" alt="">
+                </td>
+                <td> ${empleado.nombre} </td>
+                <td> ${empleado.apellidos} </td>
+                <td> ${empleado.correo} </td>
+                <td> ${empleado.fecha_contratacion}</td>
+                <td>
+                    <p class="text-success fw-bold activa"> ${empleado.estado} </p>
+                </td>
+                <td> ${empleado.salario} </td>
+                <td> ${empleado.nomRol} </td>
+                <td>
+                    <a href="" class="btn btn-primary">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                </td>
+            </tr>
+            `;
+        });
+    });
+    objRequest.send();
+}
+mostrarEmpleados();

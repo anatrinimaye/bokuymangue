@@ -1,0 +1,20 @@
+
+
+#errorNombre{
+    display: none;
+}
+#errorDireccion{
+    display: none;
+}
+#errorCorreo{
+    display: none;
+}
+#errorTel{
+    display: none;
+}
+#errorInicio{
+    display: none;
+}
+#errorFin{
+    display: none;
+}
