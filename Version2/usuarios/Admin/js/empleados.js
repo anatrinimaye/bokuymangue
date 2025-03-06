@@ -96,7 +96,7 @@ formulario.addEventListener("submit",function (e) {
 });
 
 
-// MOSTRAR LOS DATOS EN LA TABLA
+// MOSTRAR LOS DATOS EN LA TABLA DE EMPLEADOS
 
 function mostrarEmpleados(){
     let objRequest = new XMLHttpRequest();

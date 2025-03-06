@@ -1,4 +1,8 @@
 
+
+<?php require("../../conexion/conex.php"); ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Admin</title>
 <link rel="stylesheet" href="../css/plantilla.css">
+<link rel="stylesheet" href="../css/productos.css">
 </head>
 <body>
 
@@ -16,8 +21,6 @@
             require("./aside.php");
         ?>
     </div>
-
-
 
 
     <div class="modal fade" id="modalinsert" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalinsertLabel" aria-hidden="true">
@@ -31,18 +34,31 @@
                     <!-- FORMULARIO PARA NUEVO EMPLEADO -->
                     <div class="cotainer-fluit">
                         <div class="container ">
-                        <form action="">
+                        <form action="" method="POST" enctype="multipart/form-data" id="formProductos">
                         <h1 class="modal-title fs-5 text-center" id="modalinsertLabel"> REGISTRAR NUEVO PRODUCTO</h1>
-                            <input class="form-control mt-4" name="" type="file">
-                            <input class="form-control mt-4" placeholder="Nombre" name="nom" type="text">
-                            <input class="form-control mt-4" placeholder="Precio" name="precio" type="number">
-                            <select name="" id="" class="form-control mt-4">
+                            
+                            <input class="form-control mt-4" name="foto" id="foto" type="file">
+                            <div class="alert alert-danger" id="errorFoto"></div>
+
+                            <input class="form-control mt-4" placeholder="Nombre" name="nom" id="nom" type="text">
+                            <div class="alert alert-danger" id="errorNombre"></div>
+
+                            <input class="form-control mt-4" placeholder="Precio" name="precio" id="precio" type="text">
+                            <div class="alert alert-danger" id="errorPrecio"></div>
+                            
+                            <select name="cate" id="cate" class="form-control mt-4">
                                 <option value="">Categoria</option>
-                                <option value="">Citrico</option>
-                                <option value="">Pomaceas</option>
-                                <option value="">Tropicales</option>
+                                <?php 
+                                    $categoria = " SELECT * FROM categoria";
+                                    $verCategoria = $conex ->query($categoria);
+                                    while($cat = $verCategoria->fetch_assoc()) { 
+                                ?>
+                                    <option value="<?php echo $cat['cod_categoria']?>"><?php echo $cat['nombre'] ?></option>
+
+                                <?php } ?>
                             </select>
-                            <input class="form-control btn btn-success mt-4" value="REGISTRAR PRODUCTO" name="" type="submit">
+                            <div class="alert alert-danger" id="errorCat"></div>
+                            <button type="submit" class="btn btn-success form-control mt-4" name="btnRegistrar">REGISTRAR PRODUCTO</button>
                         </form>
                         </div>
                     </div>
@@ -74,27 +90,11 @@
             <th>NOMBRE</th>
             <th>PRECIO</th>
             <th>CATEGORIA</th>
-            <th colspan="2">ACCIONES</th>
+            <th>ESTADO</th>
+            <th>ACCION</th>
         </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <img class="rounded-pill" style="width:50px; height:50px" src="../../img/ana.png" alt="">
-                </td>
-                <td>Cebolla</td>
-                <td>250 XFA</td>
-                <td>Citrico</td>
-                <td>
-                    <a href="" class="btn btn-primary">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                    </a>
-                </td>
-                <td>
-                    <a href="" class="btn btn-danger">
-                    <i class="fa-solid fa-trash"></i>
-                    </a>
-                </td>
-            </tr>
+        <tbody id="tablaProductos">
+            
         </tbody>
     </table>
  </div>
@@ -108,6 +108,8 @@
 
     
 <script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../../sweetalert2/dist/sweetalert2.all.min.js"></script>
+<script src="../js/productos.js"></script>
 
 </body>
 </html>

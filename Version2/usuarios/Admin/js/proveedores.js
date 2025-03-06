@@ -84,7 +84,9 @@ formulario.addEventListener("submit",function (e) {
                 });
                 formulario.reset();
                 ModalInsertar.hide();
-                // location.reload();
+                setInterval (function(){
+                    location.reload();
+                }, 2000);
                 }
             }
             

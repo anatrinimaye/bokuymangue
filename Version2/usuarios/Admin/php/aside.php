@@ -49,6 +49,10 @@
                     <li class="nav-item mt-3">
                         <a class="nav-link " href="./ventas.php">
                         <i class="fa-solid fa-money-bill-1"></i> Ventas</a> 
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link " href="">
+                        <i class="fa-solid fa-newspaper"></i> Noticias</a>
                     </li> 
                    <br>
                     <li class="nav-item mt-3 ms-2">

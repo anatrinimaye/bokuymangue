@@ -88,6 +88,10 @@
                     <li class="nav-item mt-3">
                         <a class="nav-link " href="./php/ventas.php">
                         <i class="fa-solid fa-money-bill-1"></i> Ventas</a>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a class="nav-link " href="./php/ventas.php">
+                        <i class="fa-solid fa-newspaper"></i> Noticias</a>
                     </li>                                       
                 </ul>
                         
@@ -214,6 +218,9 @@
                                         
                                     <a class="nav-link mt-4" href="">
                                     <i class="fa-solid fa-money-bill-1"></i> Ventas</a>
+
+                                    <a class="nav-link " href="../index.php">
+                                    <i class="fa-solid fa-house"></i> Inicio </a>
                                 
                             </div>
                         </div>

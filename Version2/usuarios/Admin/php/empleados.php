@@ -26,8 +26,6 @@ require("../../conexion/conex.php");
     </div>
 
 
-
-
       <!-- Modal De Registrar Nuevo empleado-->
 <div class="modal fade" id="modalinsert" tabindex="-1" aria-labelledby="modalinsertLabel" aria-hidden="true">
     <div class="modal-dialog">
