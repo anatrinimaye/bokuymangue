@@ -164,16 +164,27 @@
             color: blue;
             
           }
-          /* Numeros del contador */
-          .conta{
-            color: black;
-            font-weight: 700;
-            font-size: 60px;
-            text-align: center;
-            background-color: #7a161660;
-          }
+          
       }
      }
+     /* CONTADOR DE CATEGORIAS */
+     .contador{
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .cats{
+          width: 250px;
+          height: 30px;
+          background-color: #81080878;
+          p{
+            font-size: 18px;
+            font-family: cambria;
+            font-weight: 550;
+          }
+        }
+      
+    }
     }
 
     /* Caja de la galeria */

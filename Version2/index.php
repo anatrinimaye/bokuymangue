@@ -1,4 +1,38 @@
 
+<?php
+  require $_SERVER['DOCUMENT_ROOT'] ."/BOKUY-MANGUE/Version2/usuarios/conexion/conex.php";
+
+
+  // TOTAL DE CITRICOS
+  $totalCitricos =" SELECT COUNT(*) AS totalCitricos FROM productos where cod_categoria = 1 ";
+  $restulCitricos = $conex -> query($totalCitricos);
+  $row = $restulCitricos->fetch_assoc();
+  $cant_citricos = $row["totalCitricos"];
+
+ // TOTAL DE HUESO O DRUPA
+ $totalDehueso =" SELECT COUNT(*) AS totalDehueso FROM productos where cod_categoria=2 ";
+ $restulDehueso = $conex -> query($totalDehueso);
+ $row = $restulDehueso->fetch_assoc();
+ $cant_drupa = $row["totalDehueso"];
+
+  // TOTAL DE POMACEAS
+$totalPomaceas =" SELECT COUNT(*) AS totalPomaceas FROM productos where cod_categoria=3 ";
+$restulPomaceas = $conex -> query($totalPomaceas);
+$row = $restulPomaceas->fetch_assoc();
+$cant_pomaceas = $row["totalPomaceas"];
+
+ // TOTAL DE TROPICALES
+ $totalTropicales =" SELECT COUNT(*) AS totalTropicales FROM productos where cod_categoria = 4 ";
+ $restulTropicales = $conex -> query($totalTropicales);
+ $row = $restulTropicales->fetch_assoc();
+ $cant_tropicales = $row["totalTropicales"];
+
+ 
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,78 +142,29 @@
       <!--CAJA DE LAS CATEGORIAS DE LOS PRODUCTOS -->
       <div class="container-fluid cajaCategorias">
         <p class=" my-5 titulo">Categorias de Productos</p>
+        
         <!-- Caja general de las cartegoria-->
-        <div class="container categorias d-flex">
-          <!-- cada Categoria -->
-            <div class="card categoria ">
-              <div class="foto">
-                <img src="./img/melocoton.webp" class="card-img-top" alt="...">
-              </div>
-              <div class="card-body texto">
-                <h5 class="card-title text-center">De hueso o Drupa</h5>
-                <p class="card-text">
-                  Frutas que tienen una semilla grande (hueso)
-                </p>
-                <a class="btn form-control md-col-4" href="./productos.php">
-                  Ver Productos <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <p class="fs-4 mt-2 conta" id="hueso">0</p>
-
-              </div>
-            </div>
-
-            <!-- cada Categoria -->
-            <div class="card categoria">
-              <div class="foto">
-                <img src="./img/naranja.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card-body texto">
-                <h5 class="card-title text-center">Citrico</h5>
-                <p class="card-text">
-                  Frutas que tienen un sabor agrio o agridulce
-                </p>
-                <a class="btn form-control md-col-4" href="./productos.php">
-                  Ver Productos <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <p class="fs-4 mt-2 conta" id="citrico">0</p>
-              </div>
-            </div>
-
-            <!-- cada Categoria -->
-            <div class="card categoria">
-              <div class="foto">
-                <img src="./img/naranja.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card-body texto">
-                <h5 class="card-title text-center">Pomaceas</h5>
-                <p class="card-text">
-                  Son frutas que tienen una semilla pequeña
-                </p>
-                <a class="btn form-control md-col-4" href="./productos.php">
-                  Ver Productos <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <p class="fs-4 mt-2 conta" id="pomacea">0</p>
-              </div>
-            </div>
-
-            <!-- cada Categoria -->
-            <div class="card categoria">
-              <div class="foto">
-                <img src="./img/naranja.jpg" class="card-img-top" alt="...">
-              </div>
-              <div class="card-body texto">
-                <h5 class="card-title text-center">Tropicales</h5>
-                <p class="card-text">
-                  Frutas que crecen en lugares tropicales con un sabor dulce
-                </p>
-                <a class="btn form-control md-col-4" href="./productos.php">
-                  Ver Productos <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <p class="fs-4 mt-2 conta" id="tropicales">0</p>
-              </div>
-            </div>
+        <div class="container categorias d-flex" id="cajaCategoria">
 
         </div>
+
+        <!-- CONTADOR DE CATEGORIAS -->
+        <div class="container contador d-flex g-2">
+          <div class="cats">
+            <p class="text-center">Citricos: <span><?php echo $cant_citricos; ?></span></p>
+          </div>
+          <div class="cats">
+            <p class="text-center">De hueso o Drupa: <span><?php echo $cant_drupa; ?></span></p>
+          </div>
+          <div class="cats">
+            <p class=" text-center">Pomaceas: <span><?php echo $cant_pomaceas; ?></span></p>
+          </div>
+          <div class="cats">
+            <p class="text-center">Tropicales: <span><?php echo $cant_tropicales; ?></span></p>
+        </div>
+
+        </div>
+        
 
       </div>
    
@@ -187,37 +172,8 @@
     <!-- GALERIA -->
     <div class="cajaGaleria">
         <p class="text-center my-5 titulo">Nuestra Galeria</p>
-        <div class="container d-flex galeria d-flex">
-            <div class="card producto" >
-              <img src="./img/fon1.jpg" class="card-img-top" alt="...">
-            </div>
-            
-            <div class="card producto" >
-              <img src="./img/fon4.jpg" class="card-img-top" alt="...">
-            </div>
-
-            <div class="card producto" >
-              <img src="./img/fon2.jpg" class="card-img-top" alt="...">
-            </div>
-
-            <div class="card producto" >
-              <img src="./img/fon3.jpg" class="card-img-top" alt="...">
-            </div>
-            <div class="card producto" >
-              <img src="./img/fon1.jpg" class="card-img-top" alt="...">
-            </div>
-            
-            <div class="card producto" >
-              <img src="./img/fon4.jpg" class="card-img-top" alt="...">
-            </div>
-
-            <div class="card producto" >
-              <img src="./img/fon2.jpg" class="card-img-top" alt="...">
-            </div>
-
-            <div class="card producto" style="width: 16rem; ">
-              <img src="./img/fon3.jpg" style="height: 240px" class="card-img-top" alt="...">
-            </div>
+        <div class="container d-flex galeria d-flex" id="cajaGaleria">
+        
         </div> 
     </div>
 
@@ -270,15 +226,15 @@
             <img class="" src="./img/whatsapp.png" alt="WhatsApp">
         </a>
     </div>
-      <script>
+      <!-- <script>
         $('.carousel').carousel({
           interval: 2000 // Tiempo en milisegundos (3 segundos en este ejemplo)
         });
-      </script>
+      </script> -->
     
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/contador.js"></script>
+    <script src="./js/categorias.js"></script>
    
   
 </body>

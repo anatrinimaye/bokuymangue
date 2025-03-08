@@ -33,143 +33,21 @@
         <!-- Caja general de las todas las Noticias -->
         <div class="container noticias">
             <!-- Caja genereal de las noticias -->
-            <div class="cajaNoticias pb-5">
-
-                <!-- Caja de cada noticia -->
-                <div class="noticia mb-3 py-2">
-                    <!-- foto de la noticia -->
-                    <p class="text-center py-2">Nuevo Contrato con la empresa EGTC</p>
-                  <div class="fotoNoticia">
-                    <img src="./img/bm2.jpg" class=""> 
-                  </div>
-                  <!-- Ver mas -->
-                  
-                    <p class="d-inline-flex gap-2">
-                      <a class="btn btn-primary align-item-center mt-2 ms-5" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
-                        Ver Mas <i class="fa-solid fa-angle-down"></i> 
-                      </a>
-                    </p>
-                  
-                  <!-- Texto que apaerce despues del ver mas -->
-                  <div class="collapse tarjRespuesta" id="collapseExample2">
-                    <div class="card card-body w-100 mb-5">
-                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Caja de cada noticia -->
-                <div class="noticia mb-3">
-                    <!-- foto de la noticia -->
-                    <p class="text-center py-2">Nuevo Contrato con la empresa EGTC</p>
-                  <div class="fotoNoticia">
-                    <img src="./img/bm1.jpg" class=""> 
-                  </div>
-                  <!-- Ver mas -->
-                  <p class="d-inline-flex gap-2">
-                    <a class="btn btn-primary align-item-center mt-3 ms-5" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Ver Mas <i class="fa-solid fa-angle-down"></i> 
-                    </a>
-                  </p>
-                  <!-- Texto que apaerce despues del ver mas -->
-                  <div class="collapse tarjRespuesta" id="collapseExample3">
-                    <div class="card card-body w-100 mb-5">
-                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Caja de cada noticia -->
-                <div class="noticia mb-3">
-                    <!-- foto de la noticia -->
-                    <p class="text-center py-2">Nuevo Contrato con la empresa EGTC</p>
-                  <div class="fotoNoticia">
-                    <img src="./img/bm3.jpg" class=""> 
-                  </div>
-                  <!-- Ver mas -->
-                  <p class="d-inline-flex gap-2">
-                    <a class="btn btn-primary align-item-center mt-2 ms-5" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Ver Mas <i class="fa-solid fa-angle-down"></i> 
-                    </a>
-                  </p>
-                  <!-- Texto que apaerce despues del ver mas -->
-                  <div class="collapse tarjRespuesta" id="collapseExample1">
-                    <div class="card card-body w-100 mb-5 px-5">
-                      Some placeholder content for the collapse component.
-                      This panel is hidden by default but revealed when the 
-                      user activates the relevant trigger.
-                      Some placeholder content for the collapse component.
-                      This panel is hidden by default but revealed when the 
-                      user activates the relevant trigger.
-                    </div>
-                  </div>
-                </div>
-
-
-
-                 <!-- Caja de cada noticia -->
-                 <div class="noticia mb-3">
-                    <!-- foto de la noticia -->
-                    <p class="text-center py-2">Nuevo Contrato con la empresa EGTC</p>
-                  <div class="fotoNoticia">
-                    <img src="./img/bm2.jpg" class=""> 
-                  </div>
-                  <!-- Ver mas -->
-                  <p class="d-inline-flex gap-2">
-                    <a class="btn btn-primary align-item-center mt-2 ms-5" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    Ver Mas <i class="fa-solid fa-angle-down"></i> 
-                    </a>
-                  </p>
-                  <!-- Texto que apaerce despues del ver mas -->
-                  <div class="collapse tarjRespuesta" id="collapseExample2">
-                    <div class="card card-body w-100 mb-5">
-                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                    </div>
-                  </div>
-                </div>
+            <div class="cajaNoticias pb-5" id="cajaNoticias">
 
             </div>
 
 
             <!-- Caja del aside ultimas noticias -->
-            <div class="cajAside mb-5">
+            <div class="cajAside mb-5" id="cajAultNoticias">
                   <h4 class=" py-2 ps-3">Ultimas Noticias</h4> <hr>
                   <!-- Caja de cada aside -->
-                <div class="cadAside d-flex py-2">
+               
+                <!-- <div class="cadAside d-flex py-2">
                       <div class="foto">
                         <img src="./img/bm3.jpg" class="" alt="...">
                       </div>
-                      <!-- Enunciado y fecha de las ultimas noticias -->
-                      <div class="enunciado">
-                        <a href="">
-                          <p class="mt-0 px-2">
-                            Compra en el supermercado EGTC <br>
-                            <small class="fecha">Enero 23, 2025</small>
-                          </p>  
-                        </a><hr>
-                      </div> 
-                </div>
-
-                <div class="cadAside d-flex py-2">
-                      <div class="foto">
-                        <img src="./img/bm1.jpg" class="" alt="...">
-                      </div>
-                      <!-- Enunciado y fecha de las ultimas noticias -->
-                      <div class="enunciado">
-                        <a href="">
-                        <p class="mt-0 px-2">
-                          Compra en el supermercado EGTC <br>
-                          <small class="fecha">Enero 23, 2025</small> <hr>
-                        </p>
-                        </a>
-                        
-                      </div>
-                </div>
-                <div class="cadAside d-flex py-2">
-                      <div class="foto">
-                        <img src="./img/bm3.jpg" class="" alt="...">
-                      </div>
-                      <!-- Enunciado y fecha de las ultimas noticias -->
+                      
                       <div class="enunciado">
                       <a href="../Version2/noticias.php #collapseExample1">
                         <p class="mt-0 px-2">
@@ -178,35 +56,9 @@
                         </p>
                         </a>
                       </div>
-                </div>
-                <div class="cadAside d-flex py-2">
-                      <div class="foto">
-                        <img src="./img/bm0.jpg" class="" alt="...">
-                      </div>
-                      <!-- Enunciado y fecha de las ultimas noticias -->
-                      <div class="enunciado">
-                      <a href="">
-                        <p class="mt-0 px-2">
-                          Compra en el supermercado EGTC <br>
-                          <small class="fecha">Enero 23, 2025</small> <hr>
-                        </p>
-                        </a>
-                      </div>
-                </div>
-                <div class="cadAside d-flex py-2">
-                      <div class="foto">
-                        <img src="./img/bm3.jpg" class="" alt="...">
-                      </div>
-                      <!-- Enunciado y fecha de las ultimas noticias -->
-                      <div class="enunciado">
-                      <a href="">
-                        <p class="mt-0 px-2">
-                          Compra en el supermercado EGTC <br>
-                          <small class="fecha">Enero 23, 2025</small> <hr>
-                        </p>
-                        </a>
-                      </div>
-                </div>
+                </div> -->
+                
+                
             </div>
 
         </div>
@@ -219,6 +71,8 @@
             ?>
           </div>
 
+      <script src="./js/noticias.js"></script>
+      <script src="./js/ultNoticias.js"></script>
   
 </body>
 </html>

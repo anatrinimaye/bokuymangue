@@ -41,28 +41,28 @@
 
       <!-- Menu de las categorias -->
       <div class="container w-75 text-center d-flex categori ">
-        <div class="col-3"><button type="button" class="active" id="">Todos los productos</button>  </div>
-        <div class="col-3"><button type="button" class="" id="btnCitricos">Citricos</button></div>
-        <div class="col-2"><button type="button" class="" id="btnPomaceas">Pomaceas</button></div>
-        <div class="col-2"><button type="button" class="" id="btnTropicales">Tropicales</button></div>
-        <div class="col-2"><button type="button" class="" id="btnDehueso">De hueso o dupa</button></div>
+        <div class="col-3"><button type="button" class="active" onclick="totalProductos()" > Todos los productos</button>  </div>
+        <div class="col-3"><button type="button" onclick="Citricos()"> Citricos</button></div>
+        <div class="col-2"><button type="button" onclick="Pomaceas()"> Pomaceas</button></div>
+        <div class="col-2"><button type="button" onclick="Tropicales()"> Tropicales</button></div>
+        <div class="col-2"><button type="button" onclick="deHuseo()"> De hueso o dupa</button></div>
       </div>
 
 
 <!--CAJA DE PRODUCTOS -->
-<div class="container py-5 d-flex productos ">
-    
-      <!-- Caja de cada producto -->
-      <div class="card producto" style="width: 14rem; ">
+<div class="container py-5 d-flex productos " id="cajaProductos">
+
+     <!-- Caja de cada producto -->
+     <!-- <div class="card producto" style="width: 14rem; ">
         <img src="./img/naranja.jpg" style="height: 190px" class="card-img-top" alt="...">
-          <!-- Nombre geneal despues de la imagen -->
+          
         <div class="card-body">
-          <!-- Nombre y precio -->
+          
           <div class="d-flex nombreYprecio">
             <p class="nomb">Berengena</p>
             <p class="prec">200 XFA</p>
           </div>
-          <!-- Tipo de producto y Buton de agregar al carrito -->
+          
           <div class="d-flex btnYtipo">
             <p class=""> Citrico </p>
             <button class="btn btn-primary btnAgregar py-0 mb-3" id="btnAgregar"> 
@@ -70,111 +70,14 @@
             </button>
           </div>
         </div>
-    </div>
-
-     <!-- Caja de cada producto -->
-     <div class="card producto" style="width: 14rem; ">
-        <img src="./img/naranja.jpg" style="height: 190px" class="card-img-top" alt="...">
-          <!-- Nombre geneal despues de la imagen -->
-        <div class="card-body">
-          <!-- Nombre y precio -->
-          <div class="d-flex nombreYprecio">
-            <p class="nomb">Berengena</p>
-            <p class="prec">200 XFA</p>
-          </div>
-          <!-- Tipo de producto y Buton de agregar al carrito -->
-          <div class="d-flex btnYtipo">
-            <p class=""> Citrico </p>
-            <button class="btn btn-primary btnAgregar py-0 mb-3" id="btnAgregar"> 
-              <i class="fa-solid fa-plus"></i> 
-            </button>
-          </div>
-        </div>
-    </div>
-
-     <!-- Caja de cada producto -->
-     <div class="card producto" style="width: 14rem; ">
-        <img src="./img/naranja.jpg" style="height: 190px" class="card-img-top" alt="...">
-          <!-- Nombre geneal despues de la imagen -->
-        <div class="card-body">
-          <!-- Nombre y precio -->
-          <div class="d-flex nombreYprecio">
-            <p class="nomb">Berengena</p>
-            <p class="prec">200 XFA</p>
-          </div>
-          <!-- Tipo de producto y Buton de agregar al carrito -->
-          <div class="d-flex btnYtipo">
-            <p class=""> Citrico </p>
-            <button class="btn btn-primary btnAgregar py-0 mb-3" id="btnAgregar"> 
-              <i class="fa-solid fa-plus"></i> 
-            </button>
-          </div>
-        </div>
-    </div>
-
-     <!-- Caja de cada producto -->
-     <div class="card producto" style="width: 14rem; ">
-        <img src="./img/naranja.jpg" style="height: 190px" class="card-img-top" alt="...">
-          <!-- Nombre geneal despues de la imagen -->
-        <div class="card-body">
-          <!-- Nombre y precio -->
-          <div class="d-flex nombreYprecio ">
-            <p class="nomb">Berengena</p>
-            <p class="prec">200 XFA</p>
-          </div>
-          <!-- Tipo de producto y Buton de agregar al carrito -->
-          <div class="d-flex btnYtipo">
-            <p class=""> Citrico </p>
-            <button class="btn btn-primary btnAgregar py-0 mb-3" id="btnAgregar"> 
-              <i class="fa-solid fa-plus"></i> 
-            </button>
-          </div>
-        </div>
-    </div>
-
-     <!-- Caja de cada producto -->
-     <div class="card producto" style="width: 14rem; ">
-        <img src="./img/naranja.jpg" style="height: 190px" class="card-img-top" alt="...">
-          <!-- Nombre geneal despues de la imagen -->
-        <div class="card-body">
-          <!-- Nombre y precio -->
-          <div class="d-flex nombreYprecio">
-            <p class="nomb">Berengena</p>
-            <p class="prec">200 XFA</p>
-          </div>
-          <!-- Tipo de producto y Buton de agregar al carrito -->
-          <div class="d-flex btnYtipo">
-            <p class=""> Citrico </p>
-            <button class="btn btn-primary btnAgregar py-0 mb-3" id="btnAgregar"> 
-              <i class="fa-solid fa-plus"></i> 
-            </button>
-          </div>
-        </div>
-    </div>
-
-     <!-- Caja de cada producto -->
-     <div class="card producto" style="width: 14rem; ">
-        <img src="./img/naranja.jpg" style="height: 190px" class="card-img-top" alt="...">
-          <!-- Nombre geneal despues de la imagen -->
-        <div class="card-body">
-          <!-- Nombre y precio -->
-          <div class="d-flex nombreYprecio">
-            <p class="nomb">Berengena</p>
-            <p class="prec">200 XFA</p>
-          </div>
-          <!-- Tipo de producto y Buton de agregar al carrito -->
-          <div class="d-flex btnYtipo">
-            <p class=""> Citrico </p>
-            <button class="btn btn-primary btnAgregar py-0 mb-3" id="btnAgregar"> 
-              <i class="fa-solid fa-plus"></i> 
-            </button>
-          </div>
-        </div>
-    </div>
+    </div> -->
 
 
 </div>
 
+
+
+</div>
 
 <div>
   <?php
@@ -188,6 +91,7 @@
       
 
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/productos.js"></script>
   
 </body>
 </html>

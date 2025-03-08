@@ -1,0 +1,19 @@
+#errorFoto{
+    display: none;
+}
+#errorTitulo{
+    display: none;
+}
+#errorFecha{
+    display: none;
+}
+#errorDescrip{
+    display: none;
+}
+
+#des {
+    white-space: nowrap;
+    overflow: hidden;  
+    text-overflow: ellipsis; 
+    max-width: 170px;
+  }

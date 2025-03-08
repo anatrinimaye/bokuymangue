@@ -58,7 +58,7 @@ CREATE TABLE productos(
    
 );
 
-drop TABLE stock;
+
 -- STOCK
 CREATE TABLE stock(
     cod_stock INT PRIMARY KEY AUTO_INCREMENT,
@@ -67,5 +67,17 @@ CREATE TABLE stock(
     stock_minimo int NOT NULL,
     cod_producto int NOT NULL, FOREIGN KEY(cod_producto) REFERENCES productos(cod_producto)
 );
+
+drop TABLE noticias;
+
+-- NOTICIAS
+CREATE TABLE noticias(
+    cod_noticia INT PRIMARY KEY AUTO_INCREMENT,
+    foto VARCHAR(45) NOT NULL,
+    titulo VARCHAR(45) NOT NULL,
+    descripcion text NOT NULL,
+    fecha_evento DATE
+);
+
 
 SELECT * FROM stock;
