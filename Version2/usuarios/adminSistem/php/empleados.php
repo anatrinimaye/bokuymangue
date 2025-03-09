@@ -94,7 +94,7 @@ require("../../conexion/conex.php");
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="" method="POST" enctype="multipart/form-data" id="fromulario">
+                <form action="" method="POST" enctype="multipart/form-data" id="formulario">
                     <h1 class="modal-title fs-5 text-center" id="modalinsertLabel"> ACTUALIZAR EMPLEADO</h1>
                     <input type="hidden" class="form-control w-100 mb-3 ps-2" name="cod_empleado" id="cod_empl" placeholder="Codigo Empleado">
                     <input class="form-control mt-4" placeholder="seleccione la foto" id="foto" name="foto" type="file">   

@@ -83,8 +83,8 @@
                 </button>
 
                     <!-- Tabla de los Empleados -->
- <div class="container table-responsive">
-    <table class="table table-hover table-striped text-center">
+ <div class="container table-responsive cajaTabla">
+    <table class="table table-striped text-center">
         <thead>
             <th>FOTO</th>
             <th>NOMBRE</th>

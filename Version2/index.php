@@ -27,9 +27,6 @@ $cant_pomaceas = $row["totalPomaceas"];
  $row = $restulTropicales->fetch_assoc();
  $cant_tropicales = $row["totalTropicales"];
 
- 
-
-
 ?>
 
 

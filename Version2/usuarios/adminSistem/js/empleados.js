@@ -1,7 +1,7 @@
 
 let ModalInsertar= new bootstrap.Modal(document.getElementById("modalinsert"));
 
-let formulario= document.getElementById("fromulario");
+let formulario= document.getElementById("formulario");
 
 
 
@@ -128,7 +128,7 @@ function mostrarEmpleados(){
                 <td> ${empleado.salario} </td>
                 <td> ${empleado.nomRol} </td>
                 <td>
-                    <button class="btn btn-primary" id="btnActualizar" item="${empleado.cod_empleado}">
+                    <button class="btn btn-primary" id="btnActualizar" item=${empleado.cod_empleado}  >
                         <i class="fa-regular fa-pen-to-square"></i>
                     </button>
                 </td>
@@ -139,11 +139,13 @@ function mostrarEmpleados(){
         // RECORRER EL BOTON DE ACTUALIZAR
         let ModalActualizar= new bootstrap.Modal(document.getElementById("modalActualizar"));
         
-        let btnActualizar = document.querySelectorAll("#btnActualizar");
-        for(let a=0; a < btnActualizar.length; a++){
-            btnActualizar[a].addEventListener('click', function (){
+        const btnActualizar = document.querySelectorAll("#btnActualizar");
+        for(let a = 0; a < btnActualizar.length; a++){
+            btnActualizar[a].addEventListener('click', function() {
                 let idAct = this.getAttribute('item');
-                console.log(idAct);
+                ModalActualizar.show();
+
+
                 
             });
         }
@@ -152,3 +154,34 @@ function mostrarEmpleados(){
     objRequest.send();
 }
 mostrarEmpleados();
+
+
+// FUNCION ACTUALIZAR
+function actualizacion(){
+        let objRequest = new XMLHttpRequest();
+    
+        let objFormData = new FormData();
+    
+        objRequest.append('id_empl',IdAct);
+        objRequest.addEventListener("load", ()=>{
+            let respuesta= objRequest.response;
+            let codigo_empleado=document.querySelector("cod_empl");
+            let nombre=document.querySelector("nom");
+            let apellidos=document.querySelector("apel");
+            let edad=document.querySelector("edad");
+            let telefono=document.querySelector("tel");
+            let profesion=document.querySelector("prof");
+    
+            respuesta.forEach(act, ()=>{
+                codigo_empleado.value=`${act.id_empl}`;
+                nombre.value=`${act.nombre}`;
+                apellidos.value=`${act.apellidos}`;
+                edad.value=`${act.edad}`;
+                telefono.value=`${act.telefono}`;
+                profesion.value=`${act.profesion}`;
+            });
+    
+            
+    
+        })
+    }
